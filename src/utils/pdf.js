@@ -4,9 +4,9 @@ const pdf = require('html-pdf');
 module.exports = function buildPdf(input, output) {
   const html = fs.readFileSync(input, 'utf8');
   const options = {
-    format: 'A4',
+    format: 'Letter',
     orientation: 'portrait',
-    border: '2.54cm',
+    border: '1.9cm',
   };
 
   return new Promise((resolve, reject) => {

@@ -1,27 +1,31 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: 'Berker Erol',
+  title: 'Full Stack Web Developer | User Experience Designer',
   facts: {
-    'Residence': 'London',
-    'Homepage': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <span class="print">https://en.wikipedia.org/wiki/William_Shakespeare</span>
-                  <span class="screen">wiki</span>
+    'Residence': 'Montreal',
+    'Homepage': `<a href="https://berkererol.github.io">
+                  <span class="print">https://berkererol.github.io</span>
+                  <span class="screen">Github Homepage</span>
                 </a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com">wil64@yahoo.com</a>'
+    'Github Repository': `<a href="https://github.com/berkererol">
+                  <span class="print">https://github.com/berkererol</span>
+                  <span class="screen">Github Repositories</span>
+                </a>`,    
+    'Email': '<a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>'
   },
   skills: [
-    ['Comedy', '++++'],
-    ['Love', '++++'],
-    ['Theater', '++++'],
-    ['Tragedy', '++++'],
-    ['Poetry', '++++'],
-    ['Erotic', '+++'],
-    ['Sonnets', '++++'],
-    ['Plays', '++++'],
-    ['Writing', '++++'],
-    ['Directing', '+++'],
-    ['Literature', '++++'],
-    ['Influence', '++++'],
+    ['NodeJS', '++++'],
+    ['Javascript (ES6)', '++++'],
+    ['TypeScript', '++++'],
+    ['React', '++++'],
+    ['Angular', '++++'],
+    ['Docker', '+++'],
+    ['RxJS - Reactive Programming', '++++'],
+    ['Redux', '++++'],
+    ['NgRX - Reactive State Management for Angular', '++++'],
+    ['CSS3', '+++'],
+    ['Figma', '++++'],
+    ['Invision', '++++'],
   ],
   plays: [
     {

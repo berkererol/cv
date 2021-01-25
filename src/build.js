@@ -38,13 +38,13 @@ buildPdf = async function (inputFile, outputFile) {
   });
   await page.pdf({
     path: outputFile,
-    format: 'A4',
+    format: 'Letter',
     border: 0,
     margin: {
-      top: '2.54cm',
-      right: '2.54cm',
-      bottom: '2.54cm',
-      left: '2.54cm',
+      top: '1.9cm',
+      right: '1.9cm',
+      bottom: '1.9cm',
+      left: '1.9cm',
     },
   });
   await browser.close();
