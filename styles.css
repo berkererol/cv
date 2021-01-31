@@ -16,13 +16,14 @@
     }
 
     .badge {
-        border: 0.07rem solid #868e96;
+        border: 0.1rem solid #868e96;
     }
 
     .badge-primary {
         color: inherit;
         background-color: inherit;
     }
+
 }
 
 @media not print {
@@ -38,6 +39,22 @@
             position: relative;
             padding: 32px;
         }
+    }
+
+    #name {
+        font-family: 'NTR', sans-serif;
+        font-size: 4rem;
+    }
+
+    #title {
+        font-family: 'Monserrat', sans-serif;
+        font-size: 1.5rem;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+    }
+
+    .badge {
+        margin: 6px;
     }
 
     h1, h2, h3, h4 {
@@ -66,6 +83,8 @@ a .fa {
 .badge {
     font-weight: normal;
     letter-spacing: 0.05rem;
+    color: black;
+    background-color: rgba(184, 255, 231, 0.5);
 }
 
 @media print {
