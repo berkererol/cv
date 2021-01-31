@@ -1,31 +1,38 @@
 module.exports = {
-  name: 'Berker Erol',
-  title: 'Full Stack Web Developer | User Experience Designer',
+  name: 'BERKER EROL',
+  title: 'FULL STACK WEB DEVELOPER',
   facts: {
-    'Residence': 'Montreal',
-    'Homepage': `<a href="https://berkererol.github.io">
-                  <span class="print">https://berkererol.github.io</span>
-                  <span class="screen">Github Homepage</span>
-                </a>`,
-    'Github Repository': `<a href="https://github.com/berkererol">
+    'Address:': 'Montréal, QC - H2W 1C9',
+    'Github:': `<a href="https://github.com/berkererol">
                   <span class="print">https://github.com/berkererol</span>
-                  <span class="screen">Github Repositories</span>
-                </a>`,    
-    'Email': '<a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>'
+                  <span class="screen">repositories</span>
+                </a>`,
+    'Phone:': '+1-514-582-0964',    
+    'Email:': '<a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>'
   },
   skills: [
-    ['NodeJS', '++++'],
-    ['Javascript (ES6)', '++++'],
-    ['TypeScript', '++++'],
-    ['React', '++++'],
-    ['Angular', '++++'],
-    ['Docker', '+++'],
-    ['RxJS - Reactive Programming', '++++'],
-    ['Redux', '++++'],
-    ['NgRX - Reactive State Management for Angular', '++++'],
-    ['CSS3', '+++'],
-    ['Figma', '++++'],
-    ['Invision', '++++'],
+    ['TypeScript'],
+    ['JavaScript (ES5/ES6)'],
+    ['Angular 2+'],
+    ['Node JS'],
+    ['React'],
+    ['Redux (NgRx)'],
+    ['Docker'],
+    ['Kubernetes'],
+    ['RxJS'],
+    ['HTML'],
+    ['SASS'],
+    ['CSS'],
+    ['Jest'],
+    ['Material UI'],
+    ['Storybook'],
+    ['GraphQL'],
+    ['Git'],
+    ['Agile'],
+    ['SCRUM'],
+    ['JIRA'],
+    ['Adobe CS'],
+    ['Figma'],
   ],
   plays: [
     {

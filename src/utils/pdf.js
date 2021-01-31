@@ -6,7 +6,7 @@ module.exports = function buildPdf(input, output) {
   const options = {
     format: 'Letter',
     orientation: 'portrait',
-    border: '1.9cm',
+    border: '0cm',
   };
 
   return new Promise((resolve, reject) => {
