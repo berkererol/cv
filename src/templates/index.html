@@ -16,24 +16,22 @@
 <body>
     <div class="container page">
         <div class="row">
-            <div class="col-md-8 col-print-6">
+            <div class="col-md-6 col-print-6">
                 <h1 id="name">{{ name }}</h1>
                 <h3 id="title"> {{title}}</h3>
-                <!-- <p>
-                <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
-            </p> -->
+                <p>
+                <time datetime="{{ buildinfo.date }}" class="text-muted screen">Last update: {{ updated }}</time>
+            </p>
                 <button class="btn btn-light btn-sm screen">
-                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o"
-                                aria-hidden="true"></i>Download PDF</a></span>
-                    <!-- <span class="print">The online version is available at <a href="{{ baseUrl }}" class="text-nowrap"><i
-                    class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span> -->
+                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF</a></span>
+
                 </button>
             </div>
-            <div class="col-md-4 col-print-6">
+            <div class="col-md-6 col-print-6">
                 <dl class="row">
                     {{#each facts}}
-                    <dt class="col-md-3">{{ @key }}</dt>
-                    <dd class="col-md-9">{{{ this }}}</dd>
+                    <dt class="col-md-3 contact">{{ @key }}</dt>
+                    <dd class="col-md-9  contact">{{{ this }}}</dd>
                     {{/each}}
                 </dl>
             </div>
@@ -65,7 +63,7 @@
         </div>
         </br class="screen">
         <h3>Professional Work Experience</h3>
-
+    </br class="screen">
         {{#each plays}}
         <div class="card mb-4">
             <div class="card-body">
