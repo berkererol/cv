@@ -42,9 +42,9 @@ buildPdf = async function (inputFile, outputFile) {
     border: 0,
     margin: {
       top: '1cm',
-      right: '1cm',
+      right: '0cm',
       bottom: '1cm',
-      left: '1cm',
+      left: '0cm',
     },
   });
   await browser.close();

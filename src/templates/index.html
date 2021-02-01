@@ -1,141 +1,160 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ name }}. {{ title }}</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=NTR&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="container page">
-    <div class="row">
-        <div class="col-md-8 col-print-6">
-            <h1 id="name">{{ name }}</h1>
-            <h3 id="title"> {{title}}</h3>
-            <!-- <p>
+    <div class="container page">
+        <div class="row">
+            <div class="col-md-8 col-print-6">
+                <h1 id="name">{{ name }}</h1>
+                <h3 id="title"> {{title}}</h3>
+                <!-- <p>
                 <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
             </p> -->
-            <button class="btn btn-light btn-sm screen"> 
-                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF</a></span>
-                <!-- <span class="print">The online version is available at <a href="{{ baseUrl }}" class="text-nowrap"><i
+                <button class="btn btn-light btn-sm screen">
+                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o"
+                                aria-hidden="true"></i>Download PDF</a></span>
+                    <!-- <span class="print">The online version is available at <a href="{{ baseUrl }}" class="text-nowrap"><i
                     class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span> -->
-            </button>
+                </button>
+            </div>
+            <div class="col-md-4 col-print-6">
+                <dl class="row">
+                    {{#each facts}}
+                    <dt class="col-md-3">{{ @key }}</dt>
+                    <dd class="col-md-9">{{{ this }}}</dd>
+                    {{/each}}
+                </dl>
+            </div>
         </div>
-        <div class="col-md-4 col-print-6">
-            <dl class="row">
-                {{#each facts}}
-                <dt class="col-md-3">{{ @key }}</dt>
-                <dd class="col-md-9">{{{ this }}}</dd>
-                {{/each}}
-            </dl>
-        </div>
-    </div>
-    <hr class="screen"></hr>
-    <p>
-        I am a full stack web developer with background in user interface design and architecture. I am able
-        to learn significantly fast, and I can design, develop and deliver products with great attention to details. As a team player,
-        I value collaboration and efficient communication. I am seeking to advance my career in frontend technologies.
-    </p>
-
-    <h3 class="">Skills</h3>
-    <div class="row">
-        {{#each skills}}
-        <!-- <div class="col-print-4 col-md-4">
+        <p>
+            I am a full stack web developer with background in user interface design and architecture. I am able
+            to learn significantly fast, and I can design, develop and deliver products with great attention to details.
+            As a team player,
+            I value collaboration and efficient communication. I am bilingual both in English and French. I am currently seeking to advance my career in frontend
+            technologies.
+        </p>
+        <hr class="screen">
+        </hr>
+        <h3 class="">Skills</h3>
+        </br class="screen">
+        <div class="row">
+            {{#each skills}}
+            <!-- <div class="col-print-4 col-md-4">
             
         </div> -->
-        <div class="col-auto screen">
-            <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
+            <div class="col-auto screen">
+                <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
+            </div>
+
+            <div class="col-print-2 col-md-2 print">
+                <small>{{ this.[0] }}</small>
+            </div>
+            {{/each}}
+        </div>
+        </br class="screen">
+        <h3>Professional Work Experience</h3>
+
+        {{#each plays}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <h4 class="col-md-9">{{ title }}</h4>
+                    <span class="col-md-3">{{ time }}</span>
+                </div>
+                <div class="row">
+                    <h5 class="col-md-9"><a href="{{ website }}">{{ company }}</a></h5>
+                    <span class="col-md-3 text-muted">{{ location }}</span>
+                </div>
+            </br class="print">
+                <div class="col-12">
+                    {{{markdown contents}}}
+                </div>
+                <ul>
+                    {{#each points }}
+                    <li>{{ this }}</li>
+                    {{/each}}
+                </ul>
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+        <h2 class="screen">Education</h2>
+        <div class="screen">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp">Lighthouse Labs</a>Web
+                    Development Bootcamp
+                    <span class="badge badge-primary badge-pill">August - November 2019</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="https://www.mcgill.ca/architecture/programs">McGill University</a> Bachelor of Science in
+                    Architecture
+                    <span class="badge badge-primary badge-pill"> September 2011 - June 2015</span>
+                </li>
+            </ul>
+        </div>
+        <div class="print">
+            <h3 class="print">Education</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    Lighthouse Labs
+                </div>
+                <div class="col-md-6">
+                    Web Development Bootcamp
+                </div>
+                <div class="col-md-3">
+                    08.2019 - 11.2019
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    McGill University
+                </div>
+                <div class="col-md-6">
+                    Bachelor of Science in Architecture
+                </div>
+                <div class="col-md-3">
+                    09.2011 - 06.2015
+                </div>
+            </div>
         </div>
 
-        <div class="col-print-2 col-md-2 print">
-            <small>{{ this.[0] }}</small>
+
+        <h3 class="screen">Projects</h3>
+
+        {{#each project}}
+        <div class="card mt-4 screen">
+            <div class="card-body">
+                <a class="mb-2" href="{{ website }}"> {{ header }} </a>
+
+                {{{markdown contents }}}
+
+                <div>
+                    {{#each skills }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+            </div>
         </div>
         {{/each}}
     </div>
-    <hr class="print"> </hr>
-
-    <div class="print">
-        <h3 class="print">Education</h3>
-        <div class="row">
-            <div class="col-md-4">
-                Lighthouse Labs
-            </div>
-            <div class="col-md-4">
-                Web Development Bootcamp
-            </div>
-            <div class="col-md-4">
-                08.2019 - 11.2019
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                McGill University
-            </div>
-            <div class="col-md-4">
-                Bachelor of Science in Architecture
-            </div>
-            <div class="col-md-4">
-                09.2011 - 06.2015
-            </div>
-        </div>
-    </div>
-
-    <hr class="print"></hr>
-    <h2>Professional Experience</h2>
-    {{#each plays}}
-    <div class="card mb-4">
-        <div class="card-body">
-            <h3>{{ title }}</h3>
-            <p class="text-muted">{{ written }}</p>
-
-            {{{markdown contents }}}
-
-            <div>
-                {{#each badges }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
-        </div>
-    </div>
-    {{/each}}
-
-    <h2 class="screen">Education</h2>
-    <div class="screen">
-        <ul class="list-group list-group-flush col-md-9">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp">Lighthouse Labs</a>Web Development Bootcamp 
-              <span class="badge badge-primary badge-pill">August - November 2019</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                <a href="https://www.mcgill.ca/architecture/programs">McGill University</a> Bachelor of Science in Architecture
-                <span class="badge badge-primary badge-pill"> September 2011 - June 2015</span>
-              </li>
-          </ul>
-    </div>
-
-
-    <h2>Additional Experience</h2>
-
-    {{#each experience}}
-    <div class="card mt-4">
-        <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
-
-            {{{markdown contents }}}
-
-            <div>
-                {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
-        </div>
-    </div>
-    {{/each}}
-</div>
 </body>
+
 </html>

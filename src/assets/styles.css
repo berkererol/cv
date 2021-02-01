@@ -24,6 +24,11 @@
         background-color: inherit;
     }
 
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
 }
 
 @media not print {
@@ -59,10 +64,11 @@
 
     h1, h2, h3, h4 {
         font-weight: 300;
+        margin: 0;
     }
 
     h2 {
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
@@ -94,7 +100,7 @@ a .fa {
     padding: 1em;
     background-color: rgba(184, 255, 231, 0.5); */
     color: #666666;
-    padding: 1em;
+    padding: 0.8em;
     background: #F8F8F8;
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 
