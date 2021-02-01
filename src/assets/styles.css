@@ -87,6 +87,19 @@ a .fa {
     background-color: rgba(184, 255, 231, 0.5);
 }
 
+.badge-lighter {
+    font-weight: normal;
+    letter-spacing: 0.02rem;
+    /* color: black;
+    padding: 1em;
+    background-color: rgba(184, 255, 231, 0.5); */
+    color: #666666;
+    padding: 1em;
+    background: #F8F8F8;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+}
+
 @media print {
     .col-print-1 {
         flex: 0 0 8.333333%;

@@ -12,7 +12,7 @@ module.exports = {
   },
   skills: [
     ['TypeScript'],
-    ['JavaScript (ES5/ES6)'],
+    ['JavaScript ES6'],
     ['Angular 2+'],
     ['Node JS'],
     ['React'],

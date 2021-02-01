@@ -21,7 +21,7 @@
                 <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
             </p> -->
             <button class="btn btn-light btn-sm screen"> 
-                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF version.</a></span>
+                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF</a></span>
                 <!-- <span class="print">The online version is available at <a href="{{ baseUrl }}" class="text-nowrap"><i
                     class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span> -->
             </button>
@@ -35,7 +35,7 @@
             </dl>
         </div>
     </div>
-    <hr></hr>
+    <hr class="screen"></hr>
     <p>
         I am a full stack web developer with background in user interface design and architecture. I am able
         to learn significantly fast, and I can design, develop and deliver products with great attention to details. As a team player,
@@ -48,26 +48,41 @@
         <!-- <div class="col-print-4 col-md-4">
             
         </div> -->
-        
-        <span class="badge badge-pill badge-lighter col-2 screen">{{ this.[0] }}</span>
+        <div class="col-auto screen">
+            <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
+        </div>
 
-        <div class="col-print-3 col-md-4 print">
+        <div class="col-print-2 col-md-2 print">
             <small>{{ this.[0] }}</small>
         </div>
         {{/each}}
     </div>
+    <hr class="print"> </hr>
 
     <div class="print">
-        <hr class="print"> </hr>
         <h3 class="print">Education</h3>
-        <ul>
-            <li >
-             <b>Lighthouse Labs</b> - Web Development Bootcamp -  <i>2019</i>
-            </li>
-            <li>
-                <b>McGill University</b> - Bachelor of Science in Architecture - <i>2015</i>
-              </li>
-          </ul>
+        <div class="row">
+            <div class="col-md-4">
+                Lighthouse Labs
+            </div>
+            <div class="col-md-4">
+                Web Development Bootcamp
+            </div>
+            <div class="col-md-4">
+                08.2019 - 11.2019
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                McGill University
+            </div>
+            <div class="col-md-4">
+                Bachelor of Science in Architecture
+            </div>
+            <div class="col-md-4">
+                09.2011 - 06.2015
+            </div>
+        </div>
     </div>
 
     <hr class="print"></hr>
