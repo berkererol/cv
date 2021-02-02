@@ -20,10 +20,11 @@
                 <h1 id="name">{{ name }}</h1>
                 <h3 id="title"> {{title}}</h3>
                 <p>
-                <time datetime="{{ buildinfo.date }}" class="text-muted screen">Last update: {{ updated }}</time>
-            </p>
+                    <time datetime="{{ buildinfo.date }}" class="text-muted screen">Last update: {{ updated }}</time>
+                </p>
                 <button class="btn btn-light btn-sm screen">
-                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF</a></span>
+                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o"
+                                aria-hidden="true"></i>Download PDF</a></span>
 
                 </button>
             </div>
@@ -40,7 +41,8 @@
             I am a full stack web developer with background in user interface design and architecture. I am able
             to learn significantly fast, and I can design, develop and deliver products with great attention to details.
             As a team player,
-            I value collaboration and efficient communication. I am bilingual both in English and French. I am currently seeking to advance my career in frontend
+            I value collaboration and efficient communication. I am bilingual both in English and French. I am currently
+            seeking to advance my career in frontend
             technologies.
         </p>
         <hr class="screen">
@@ -49,9 +51,6 @@
         </br class="screen">
         <div class="row">
             {{#each skills}}
-            <!-- <div class="col-print-4 col-md-4">
-            
-        </div> -->
             <div class="col-auto screen">
                 <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
             </div>
@@ -63,7 +62,7 @@
         </div>
         </br class="screen">
         <h3>Professional Work Experience</h3>
-    </br class="screen">
+        </br class="screen">
         {{#each plays}}
         <div class="card mb-4">
             <div class="card-body">
@@ -75,7 +74,7 @@
                     <h5 class="col-md-9"><a href="{{ website }}">{{ company }}</a></h5>
                     <span class="col-md-3 text-muted">{{ location }}</span>
                 </div>
-            </br class="print">
+                </br class="print">
                 <div class="col-12">
                     {{{markdown contents}}}
                 </div>
@@ -93,21 +92,35 @@
         </div>
         {{/each}}
 
-        <h2 class="screen">Education</h2>
-        <div class="screen">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp">Lighthouse Labs</a>Web
-                    Development Bootcamp
-                    <span class="badge badge-primary badge-pill">August - November 2019</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <a href="https://www.mcgill.ca/architecture/programs">McGill University</a> Bachelor of Science in
-                    Architecture
-                    <span class="badge badge-primary badge-pill"> September 2011 - June 2015</span>
-                </li>
-            </ul>
+        <h3 class="screen">Education</h3>
+        </br class="screen">
+
+        <div class="card mb-4 screen">
+
+            <div class="row card-body edu">
+                <div class="col-md-3">
+                    <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp">Lighthouse Labs</a>
+                </div>
+                <div class="col-md-6">
+                    Web Development Bootcamp
+                </div>
+                <div class="col-md-3 text-muted">
+                    08.2019 - 11.2019
+                </div>
+            </div>
+            <div class="row card-body edu">
+                <div class="col-md-3">
+                    <a href="https://www.mcgill.ca/architecture/programs">McGill University</a>
+                </div>
+                <div class="col-md-6">
+                    Bachelor of Science in Architecture
+                </div>
+                <div class="col-md-3 text-muted">
+                    09.2011 - 06.2015
+                </div>
+            </div>
         </div>
+        <!-- For printing only -->
         <div class="print">
             <h3 class="print">Education</h3>
             <div class="row">
