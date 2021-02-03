@@ -39,7 +39,7 @@ module.exports = {
   ],
   plays: [
     {
-      title: "Associate Software Engineer",
+      title: "Full Stack Web Developer",
       company: "OneSpan",
       location: "Montréal, Canada",
       website: "https://www.onespan.com",
