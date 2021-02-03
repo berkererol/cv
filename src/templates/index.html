@@ -37,19 +37,29 @@
                 </dl>
             </div>
         </div>
-        <p>
-            I am a full stack web developer with background in user interface design and architecture. I am able
-            to learn significantly fast, and I can design, develop and deliver products with great attention to details.
-            As a team player,
-            I value collaboration and efficient communication. I am bilingual both in English and French. I am currently
-            seeking to advance my career in frontend
-            technologies.
-        </p>
-        <hr class="screen">
-        </hr>
+        <div class="summary">
+            <ul>
+                <li>
+                    Full stack web developer with a track record of developing a mobile-first SaaS application used by most financial institutions around the globe.
+                </li>
+                <li>
+                    Independent self-learner who can efficiently collaborate with other developers to increase commitment to best practices and standards.
+                </li>
+                <li>
+                    Passionate about building applications that are accessibility compliant and provide engaging user experience.
+                </li>
+                <li >
+                    Willing to jump on any tech stack to quickly learn, promptly produce and thus bring value to a team.
+                </li>
+            </ul>
+            
+        </div>
+        <hr class="screen"></hr>
         <h3 class="">Skills</h3>
-        </br class="screen">
-        <div class="row">
+        <div class="screen">
+            <br>
+        </div>
+        <div class="row edu">
             {{#each skills}}
             <div class="col-auto screen">
                 <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
@@ -61,12 +71,12 @@
             {{/each}}
         </div>
         </br class="screen">
-        <h3>Professional Work Experience</h3>
+        <h3 id="prof">Professional Work Experience</h3>
         </br class="screen">
         {{#each plays}}
-        <div class="card mb-4">
+        <div class="card mb-4 edu">
             <div class="card-body">
-                <div class="row">
+                <div class="row jobtitle">
                     <h4 class="col-md-8">{{ title }}</h4>
                     <span class="col-md-4">{{ time }}</span>
                 </div>
@@ -83,17 +93,24 @@
                     <li>{{ this }}</li>
                     {{/each}}
                 </ul>
+            </div>
+            <div class="card-body">
                 <div>
+                    <h6>TECH STACK</h6>
                     {{#each badges }}
-                    <span class="badge badge-primary">{{ this }}</span>
+                    <span class="badge badge-primary">- {{ this }}</span>
                     {{/each}}
                 </div>
             </div>
         </div>
+        <hr class="print">
+        </hr>
         {{/each}}
 
         <h3 class="screen">Education</h3>
-        </br class="screen">
+        <div class="screen">
+            <br>
+        </div>
 
         <div class="card mb-4 screen">
 
@@ -102,13 +119,14 @@
                     <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp">Lighthouse Labs</a>
                 </div>
                 <div class="col-md-5">
-                    Web Development Bootcamp
+                    Full Stack Web Development Bootcamp
                 </div>
                 <div class="col-md-4 text-muted">
-                    08.2019 - 11.2019
+                    August 2019 - November 2019
                 </div>
             </div>
-            <hr></hr>
+            <hr>
+            </hr>
             <div class="row card-body">
                 <div class="col-md-3">
                     <a href="https://www.mcgill.ca/architecture/programs">McGill University</a>
@@ -117,7 +135,7 @@
                     Bachelor of Science in Architecture
                 </div>
                 <div class="col-md-4 text-muted">
-                    09.2011 - 06.2015
+                    September 2011 - June 2015
                 </div>
             </div>
         </div>
@@ -128,26 +146,52 @@
                 <div class="col-md-3">
                     Lighthouse Labs
                 </div>
-                <div class="col-md-6">
-                    Web Development Bootcamp
+                <div class="col-md-5">
+                    Full Stack Web Development Bootcamp
                 </div>
-                <div class="col-md-3">
-                    08.2019 - 11.2019
+                <div class="col-md-4">
+                    August 2019 - November 2019
                 </div>
+                <div class="col-md-12 print">Montréal, QC</div>
             </div>
-            <div class="row">
+
+            <div style="padding-top: 0.2em" class="row">
                 <div class="col-md-3">
                     McGill University
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     Bachelor of Science in Architecture
                 </div>
+                <div class="col-md-4">
+                    September 2011 - June 2015
+                </div>
+                <div class="col-md-12 print">Montréal, QC</div>
+            </div>
+        </div>
+        <!-- Certificates  Section -->
+        <h3 class="screen">Certificates</h3>
+        <div class="screen">
+            <br>
+        </div>
+
+        <div class="card mb-4 screen">
+
+            <div class="row card-body">
                 <div class="col-md-3">
-                    09.2011 - 06.2015
+                    Angular University - Udemy
+                </div>
+                <div class="col-md-5">
+                    Reactive Extensions Angular Course with RxJS
+                </div>
+
+                <div class="col-md-4 text-muted">
+                    January 2021
+                </div>
+                <div class="col-md-12">
+                    <a href="https://www.udemy.com/certificate/UC-a6867eab-fa0f-4021-b15c-0d151025f602/">view certificate</a>
                 </div>
             </div>
         </div>
-
 
         <h3 class="screen">Projects</h3>
 
@@ -160,7 +204,7 @@
 
                 <div>
                     {{#each skills }}
-                    <span class="badge badge-primary">{{ this }}</span>
+                    <span class="badge badge-primary">- {{ this }}</span>
                     {{/each}}
                 </div>
             </div>

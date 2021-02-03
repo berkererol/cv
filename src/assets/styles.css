@@ -1,6 +1,8 @@
 @media print {
     body {
-        font-size: 19px;
+        font-size: 17px;
+        margin: 0;
+        padding: 0;
     }
 
     .screen {
@@ -22,6 +24,8 @@
     .badge-primary {
         color: inherit;
         background-color: inherit;
+        border: none;
+        margin-top: 0;
     }
 
     a {
@@ -29,6 +33,20 @@
       text-decoration: none;
     }
 
+    .row.jobtitle {
+        margin-bottom: 0em;
+        margin-top: 0em;
+    }
+
+    .edu {
+        margin: 0;
+        padding: 0;
+    }
+
+    #prof {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media not print {
