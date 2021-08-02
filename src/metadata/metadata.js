@@ -1,20 +1,22 @@
 module.exports = {
   name: "BERKER EROL",
-  title: "FULL STACK WEB DEVELOPER",
+  title: "FRONTEND WEB DEVELOPER",
   facts: {
     "Address:": "Montréal, QC - H2W 1C9",
     "Github:": `<a href="https://github.com/berkererol">
                   <span class="print">github.com/berkererol</span>
                   <span class="screen">repositories</span>
                 </a>`,
-    "Linkedin:": '<a class="screen" href="https://www.linkedin.com/in/berkererol/">profile</a><a class="print" href="https://www.linkedin.com/in/berkererol/">linkedin.com/in/berkererol</a>',
+    "Linkedin:":
+      '<a class="screen" href="https://www.linkedin.com/in/berkererol/">profile</a><a class="print" href="https://www.linkedin.com/in/berkererol/">linkedin.com/in/berkererol</a>',
     "Phone:": "+1-514-582-0964",
     "Email:": '<a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
   },
   skills: [
     ["TypeScript"],
     ["JavaScript ES6"],
-    ["Angular 2+"],
+    ["Angular 12 (2+)"],
+    ["Nx Workspace"],
     ["Node JS"],
     ["React"],
     ["Redux (NgRx)"],
@@ -39,6 +41,38 @@ module.exports = {
   ],
   plays: [
     {
+      title: "Frontend Developer",
+      company: "Intact Insurance",
+      location: "Montréal, Canada",
+      website: "https://www.intact.ca",
+      time: "April 2021 - present",
+      badges: [
+        "Angular",
+        "Nx",
+        "TypeScript",
+        "Javascript",
+        "Storybook",
+        "Cypress",
+        "Jenkins",
+        "Sass",
+        "CSS",
+        "Node JS",
+        "Docker",
+        "OpenShift",
+        "Kubernetes",
+        "Micro Frontends",
+      ],
+      contents:
+        "Angular wizard for constructing new features in the user interface for the instant insurance quote engine.",
+      points: [
+        "Improved interface functionality of the new bundle quote engine, which generates quote for home and car insurance.",
+        "Built new Angular libraries within the Nx framework for micro frontend architecture initiative.",
+        "Wrote comprehensive integration tests and increased code coverage.",
+        "Independently deployed code to testing environments and prepared Git branches for releases.",
+        "Succesfully managed JIRA tickets and maximized story completion by strong collaboration and communication.",
+      ],
+    },
+    {
       title: "Full Stack Web Developer",
       company: "OneSpan",
       location: "Montréal, Canada",
@@ -60,7 +94,7 @@ module.exports = {
         "Kubernetes",
         "CSS",
         "JSS",
-        "SASS"
+        "SASS",
       ],
       contents:
         "Developer in the frontend team of the Secure Agreement Automation product, a SaaS application for digital authentication, e-signature and audit trail generation for contracts, used by most credit companies in EU.",
@@ -69,7 +103,7 @@ module.exports = {
         "Implemented unit tests using Karma and Jasmine.",
         "Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments.",
         "Collaborated with the back end engineers to connect our frontend to Java API.",
-        "Integrated provider SDKs for face scanning and identity document processing."
+        "Integrated provider SDKs for face scanning and identity document processing.",
       ],
     },
     {
@@ -125,14 +159,7 @@ module.exports = {
     {
       header: "Jungle",
       website: "https://github.com/berkererol/jungle-rails",
-      skills: [
-        "Ruby",
-        "Rails",
-        "Bootstrap",
-        "PostgreSQL",
-        "CSS",
-        "Stripe API",
-      ],
+      skills: ["Ruby", "Rails", "Bootstrap", "PostgreSQL", "CSS", "Stripe API"],
       contents: `An e-commerce web
       application built with
       Ruby 2.5.1 and Rails
@@ -145,13 +172,7 @@ module.exports = {
     {
       header: "Scheduler",
       website: "https://github.com/berkererol/scheduler",
-      skills: [
-        "React",
-        "Axios",
-        "Node JS",
-        "Cypress",
-        "Sass CSS",
-      ],
+      skills: ["React", "Axios", "Node JS", "Cypress", "Sass CSS"],
       contents: `Scheduler is a singlepage React app that
       lets users book an
       interview. Users can
