@@ -69,15 +69,21 @@
   }
 
   #name {
-    font-family: "NTR", sans-serif;
-    font-size: 4rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 3.6rem;
   }
 
   #title {
-    font-family: "Monserrat", sans-serif;
-    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.2rem;
     line-height: 35px;
     letter-spacing: 0.05em;
+  }
+
+  .text-muted {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.8em;
+    color: gray;
   }
 
   .badge {
