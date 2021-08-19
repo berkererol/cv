@@ -1,6 +1,6 @@
 module.exports = {
   name: "BERKER EROL",
-  title: "FRONTEND WEB DEVELOPER",
+  title: "Frontend Developer and User Experience Designer",
   facts: {
     "Address:": "Montréal, QC - H2W 1C9",
     "Github:": `<a href="https://github.com/berkererol">
