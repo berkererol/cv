@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&family=NTR&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3210fec805.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,19 +22,19 @@
             <div class="col-md-6 col-print-6">
                 <h1 id="name">{{ name }}</h1>
                 <h3 id="title"> {{title}}</h3>
+
+                <button class="btn btn-primary btn-sm screen">
+                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o"
+                                aria-hidden="true"></i>Download CV</a></span>
+                </button>
                 <p>
                     <time datetime="{{ buildinfo.date }}" class="text-muted screen">Last update: {{ updated }}</time>
                 </p>
-                <button class="btn btn-light btn-sm screen">
-                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o"
-                                aria-hidden="true"></i>Download PDF</a></span>
-
-                </button>
             </div>
             <div class="col-md-6 col-print-6">
                 <dl class="row">
                     {{#each facts}}
-                    <dt class="col-md-3 contact">{{ @key }}</dt>
+                    <dt class="col-md-3 contact print">{{ @key }}</dt>
                     <dd class="col-md-9  contact">{{{ this }}}</dd>
                     {{/each}}
                 </dl>
@@ -44,24 +47,20 @@
             </div>
             <ul>
                 <li>
-                    Full stack web developer with a successful track record in developing pertinent user experiences in high-volume web and mobile applications.   
+                    Full stack web developer with a unique background in design who can seamlessly blend UX design and core software engineering patterns.   
                 </li>
                 <li>
-                    Held various roles in creative fields as designer architect, graphic designer and UX / UI designer.   
+                    Exceptionally advanced in building, developing and testing front end applications with Angular (v12.) and React.
                 </li>
                 <li>
-                    Proactive team player who takes initiative and collaborates effectively with other developers to maximize team commitment to product goals.
+                    Proactive team player who takes initiative and collaborates effectively with others to reach product goals.
                 </li>
                 <li>
-                    Principled self-teacher who can enhance his skill sets quickly while being able to mentor and lead other contributors.
+                    Principled self-teacher who can enhance his skill sets quickly, and a  mentoring and leading other contributors.
                 </li>
             </ul>
-            <div class="screen">
-                <br>
-            </div>
             
         </div>
-        <hr class="screen"></hr>
         <h3 class="">Skills</h3>
         <div class="screen">
             <br>
@@ -110,8 +109,7 @@
                 </div>
             </div>
         </div>
-        <hr class="screen">
-        </hr>
+
         {{/each}}
 
         <h3 class="screen">Education</h3>
@@ -126,21 +124,35 @@
                     <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp">Lighthouse Labs</a>
                 </div>
                 <div class="col-md-5">
-                    Full Stack Web Development Bootcamp
+                    <p>Full Stack Web Development Bootcamp</p>
+                    <small>12 weeks-long, intensive coding bootcamp</small>
                 </div>
+
                 <div class="col-md-4 text-muted">
                     August 2019 - November 2019
                 </div>
             </div>
-            <hr>
-            </hr>
+            <hr></hr>
+            <div class="row card-body">
+                <div class="col-md-3">
+                    <a href="https://www.mcgill.ca/architecture/programs">McGill University</a>
+                </div>
+                <div class="col-md-5">
+                    <p>Master of Architecture<small><i>(incomplete)</i></small>
+                    </p>
+                </div>
+                <div class="col-md-4 text-muted">
+                    September 2011 - January 2016
+                </div>
+            </div>
+            <hr></hr>
             <div class="row card-body">
                 <div class="col-md-3">
                     <a href="https://www.mcgill.ca/architecture/programs">McGill University</a>
                 </div>
                 <div class="col-md-5">
                     <p>Bachelor of Science in Architecture</p>
-                    <small>Undergraduate Degree</small>
+                    <small>Undergraduate Degree, with 3.64/4.00 cGPA</small>
                 </div>
                 <div class="col-md-4 text-muted">
                     September 2011 - June 2015
@@ -253,7 +265,8 @@
         {{#each project}}
         <div class="card mt-4 screen">
             <div class="card-body">
-                <a class="mb-2" href="{{ website }}"> {{ header }} </a>
+                <h5>{{ header }} - <small><a class="mb-2" href="{{ website }}"> see project</a></small> 
+                </h5>
 
                 {{{markdown contents }}}
 
@@ -265,6 +278,32 @@
             </div>
         </div>
         {{/each}}
+    </div>
+    <div class="screen">
+        <footer class="ux">
+            <h4>Berker Erol &middot; Full Stack Web Developer</h4>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/berkererol" target="_blank">
+                  <span class="fab fa-linkedin" aria-hidden="true"></span>
+                  <span class="sr-only">LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/berkererol" target="_blank">
+                  <span class="fab fa-github-square" aria-hidden="true"></span>
+                  <span class="sr-only">Github</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/berkererol" target="_blank">
+                    <span class="fab fa-behance" aria-hidden="true"></span>
+                    <span class="sr-only">Github</span>
+                  </a>
+              </li>
+            </ul>
+            <p><small>&copy; 2021 Berker Erol. All rights reserved.</small></p>
+          </footer>
     </div>
 </body>
 

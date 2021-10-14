@@ -58,30 +58,60 @@
     display: none;
   }
 
+  footer.ux {
+    padding-top: 2em;
+    height: 15em;
+    background-color: #f1f1f1;
+    text-align: center;
+    opacity: 1;
+    background-image: linear-gradient(#ffffff 0.8px, transparent 0.8px),
+      linear-gradient(90deg, #ffffff 0.8px, transparent 0.8px),
+      linear-gradient(#ffffff 0.4px, transparent 0.4px),
+      linear-gradient(90deg, #ffffff 0.4px, #f1f1f1 0.4px);
+    background-size: 20px 20px, 20px 20px, 4px 4px, 4px 4px;
+    background-position: -0.8px -0.8px, -0.8px -0.8px, -0.4px -0.4px,
+      -0.4px -0.4px;
+  }
+
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+  }
+
+  .row.edu {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+  }
+
   @media (min-width: 576px) {
     .page {
       margin-top: 10px;
       margin-bottom: 10px;
-      box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.75);
       position: relative;
       padding: 32px;
     }
   }
 
   #name {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 3.6rem;
+    font-family: "Roboto Slab", serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
   }
 
   #title {
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.2rem;
-    line-height: 35px;
-    letter-spacing: 0.05em;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 2rem;
   }
 
   .text-muted {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Inter", serif;
     font-size: 0.8em;
     color: gray;
   }
@@ -91,15 +121,16 @@
   }
 
   dt.contact {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.1rem;
+    letter-spacing: -0.05em;
     color: black;
   }
 
   dd.contact {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.1rem;
-    color: gray;
+    letter-spacing: -0.05em;
   }
 
   h1,
@@ -121,6 +152,10 @@
 
   strong {
     font-weight: 500;
+  }
+
+  button.screen a {
+    color: white;
   }
 }
 
@@ -146,7 +181,7 @@ a .fa {
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .btn.btn-light {

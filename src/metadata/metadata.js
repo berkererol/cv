@@ -1,16 +1,18 @@
 module.exports = {
-  name: "BERKER EROL",
-  title: "Frontend Developer and User Experience Designer",
+  name: "Berker Erol",
+  title: "Full Stack Web Developer",
   facts: {
-    "Address:": "Montréal, QC - H2W 1C9",
-    "Github:": `<a href="https://github.com/berkererol">
+    "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC - H2W 1C9</span>`,
+    "Github:": `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
+                  <a href="https://github.com/berkererol">
                   <span class="print">github.com/berkererol</span>
-                  <span class="screen">repositories</span>
+                  <span class="screen">Github</span>
                 </a>`,
     "Linkedin:":
-      '<a class="screen" href="https://www.linkedin.com/in/berkererol/">profile</a><a class="print" href="https://www.linkedin.com/in/berkererol/">linkedin.com/in/berkererol</a>',
-    "Phone:": "+1-514-582-0964",
-    "Email:": '<a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
+      '<span class="fab fa-linkedin screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a class="screen" href="https://www.linkedin.com/in/berkererol/">Linkedin</a><a class="print" href="https://www.linkedin.com/in/berkererol/">linkedin.com/in/berkererol</a>',
+    "Phone:": `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>+1-514-582-0964`,
+    "Email:":
+      '<span class="fas fa-paper-plane screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
   },
   skills: [
     ["TypeScript"],
@@ -41,11 +43,11 @@ module.exports = {
   ],
   plays: [
     {
-      title: "Frontend Developer",
+      title: "Front End Developer",
       company: "Intact Insurance",
       location: "Montréal, Canada",
       website: "https://www.intact.ca",
-      time: "April 2021 - present",
+      time: "April 2021 - October 2021",
       badges: [
         "Angular",
         "Nx",
@@ -63,11 +65,11 @@ module.exports = {
         "Micro Frontends",
       ],
       contents:
-        "Angular wizard for constructing new features in the user interface for the instant insurance quote engine.",
+        "Angular developer for building new UI features for Intact's instant-quote generating web application.",
       points: [
         "Improved interface functionality of the new bundle quote engine, which generates quote for home and car insurance.",
-        "Built new Angular libraries within the Nx framework for micro frontend architecture initiative.",
-        "Wrote comprehensive integration tests and increased code coverage.",
+        "Built new Angular libraries within the Nx framework for migrating towards micro frontend architecture.",
+        "Implemented comprehensive end-to-end tests with and increased code coverage from 85% to 100%.",
         "Independently deployed code to testing environments and prepared Git branches for releases.",
         "Succesfully managed JIRA tickets and maximized story completion by strong collaboration and communication.",
       ],
@@ -97,10 +99,11 @@ module.exports = {
         "SASS",
       ],
       contents:
-        "Developer in the frontend team of the Secure Agreement Automation product, a SaaS application for digital authentication, e-signature and audit trail generation for contracts, used by most credit companies in EU.",
+        "Developer in the Secure Agreement Automation team, a SaaS application for digital authentication, e-signature and audit trail generation for contracts, used by most credit companies in EU.",
       points: [
-        "Developed ADA accessibility-compliant components in TypeScript using Angular framework.",
-        "Implemented unit tests using Karma and Jasmine.",
+        "Written bash scripts which cut down new client onboarding time from months to several weeks.",
+        "Developed ADA accessibility-compliant interface components in TypeScript using Angular framework.",
+        "Implemented unit tests using Karma and Jasmine, and increased coverage to 100%.",
         "Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments.",
         "Collaborated with the back end engineers to connect our frontend to Java API.",
         "Integrated provider SDKs for face scanning and identity document processing.",
@@ -126,7 +129,7 @@ module.exports = {
       contents:
         "Reconceived the user experience with a meticulous design system, which boosted client engagement for this emerging Montréal start-up.",
       points: [
-        "Created a new menu page layout after an in-depth A/B testing, which increased new subscriptions and client retention.",
+        "Created a new menu page layout after an in-depth A/B testing, which tripled new subscription rates.",
         "Designed mobile-first interface components on Figma for the front end application in React JS.",
         "Lead the manufacturing process for Kit durable, a zero-waste food kit delivered to customers by bike.",
         "Collaborated with the marketing team to develop new branding guidelines and social media templates.",
