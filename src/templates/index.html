@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Berker Erol">
+    <meta property='og:Résumé' content='Berker Erol Official Résumé'/>
+    <meta property='og:image' content='https://i.ibb.co/2yw7y7P/Frame-6-2.jpg'/>
+    <meta property='og:description' content='Berker Erol - Full Stack Web Developer'/>
+    <meta property='og:url' content='https://berkererol.github.io/cv/'/>
     <title>{{ name }}. {{ title }}</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -18,7 +23,7 @@
 
 <body>
     <div class="container page">
-        <div class="row">
+        <div class="row header">
             <div class="col-md-6 col-print-6">
                 <h1 id="name">{{ name }}</h1>
                 <h3 id="title"> {{title}}</h3>
@@ -32,7 +37,7 @@
                 </p>
             </div>
             <div class="col-md-6 col-print-6">
-                <dl class="row">
+                <dl class="row header">
                     {{#each facts}}
                     <dt class="col-md-3 contact print">{{ @key }}</dt>
                     <dd class="col-md-9  contact">{{{ this }}}</dd>
@@ -41,27 +46,27 @@
             </div>
         </div>
         <div class="summary">
-            <h3 class="">Summary</h3>
+            <h4 class="summary-title">Summary</h4>
             <div class="screen">
                 <br>
             </div>
             <ul>
                 <li>
-                    Full stack web developer with a unique background in design who can seamlessly blend UX design and core software engineering patterns.   
+                    Driven full stack web developer with 2 years of experience who can seamlessly blend UX design and software engineering patterns.   
                 </li>
                 <li>
-                    Exceptionally advanced in building, developing and testing front end applications with Angular (v12.) and React.
+                    Specialized in developing and maintaining web applications built with Angular, React, HTML, CSS, Javascript and TypeScript.
                 </li>
                 <li>
-                    Proactive team player who takes initiative and collaborates effectively with others to reach product goals.
+                    Disciplined lifelong learner who willingly builds rapport and collaborates with other contributors to provide and receive mentorship.
                 </li>
                 <li>
-                    Principled self-teacher who can enhance his skill sets quickly, and a  mentoring and leading other contributors.
+                    Curious experimenter who can interlace cutting edge technologies to go above and beyond project scope, and deliver exceptional products.
                 </li>
             </ul>
             
         </div>
-        <h3 class="">Skills</h3>
+        <h4 class="">Skills</h4>
         <div class="screen">
             <br>
         </div>
@@ -77,13 +82,13 @@
             {{/each}}
         </div>
         </br class="screen">
-        <h3 id="prof">Professional Work Experience</h3>
+        <h4 id="prof">Professional Work Experience</h4>
         </br class="screen">
         {{#each plays}}
         <div class="card mb-4 edu">
             <div class="card-body">
                 <div class="row jobtitle">
-                    <h4 class="col-md-8">{{ title }}</h4>
+                    <h4 class="col-md-8 jobtitle">{{ title }}</h4>
                     <span class="col-md-4">{{ time }}</span>
                 </div>
                 <div class="row">
@@ -104,7 +109,7 @@
                 <div>
                     <h6>TECH STACK</h6>
                     {{#each badges }}
-                    <span class="badge badge-primary">- {{ this }}</span>
+                    <span class="badge badge-primary">&middot; {{ this }}</span>
                     {{/each}}
                 </div>
             </div>
@@ -112,7 +117,7 @@
 
         {{/each}}
 
-        <h3 class="screen">Education</h3>
+        <h4 class="screen">Education</h4>
         <div class="screen">
             <br>
         </div>
@@ -138,11 +143,11 @@
                     <a href="https://www.mcgill.ca/architecture/programs">McGill University</a>
                 </div>
                 <div class="col-md-5">
-                    <p>Master of Architecture<small><i>(incomplete)</i></small>
+                    <p>Master of Architecture <small><i> (incomplete)</i></small>
                     </p>
                 </div>
                 <div class="col-md-4 text-muted">
-                    September 2011 - January 2016
+                    September 2015 - January 2016
                 </div>
             </div>
             <hr></hr>
@@ -164,7 +169,7 @@
             <br>
         </div>
         <div class="print">
-            <h3 class="print">Education</h3>
+            <h4 class="print">Education</h4>
             <div class="print">
                 <br>
             </div>
@@ -198,7 +203,7 @@
             <br>
         </div>
         <!-- Certificates  Section -->
-        <h3 class="print">Certificates</h3>
+        <h4 class="print">Certificates</h4>
         <div class="print">
             <br>
         </div>
@@ -229,7 +234,7 @@
                     Collège de Maisonneuve
                 </div>
                 <div class="col-md-5">
-                    Design Thinking et Design UX 
+                    UX Design and Design Thinking 
                 </div>
 
                 <div class="col-md-4 text-muted">
@@ -260,7 +265,7 @@
             </div>
         </div>
 
-        <h3 class="screen">Projects</h3>
+        <h4 class="screen">Projects</h4>
 
         {{#each project}}
         <div class="card mt-4 screen">
@@ -281,7 +286,7 @@
     </div>
     <div class="screen">
         <footer class="ux">
-            <h4>Berker Erol &middot; Full Stack Web Developer</h4>
+            <h4>Berker Erol — Full Stack Web Developer in Montreal, Canada</h4>
             <ul>
               <li>
                 <a href="https://www.linkedin.com/in/berkererol" target="_blank">
@@ -296,9 +301,9 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.github.com/berkererol" target="_blank">
+                <a href="https://www.behance.net/berkererol" target="_blank">
                     <span class="fab fa-behance" aria-hidden="true"></span>
-                    <span class="sr-only">Github</span>
+                    <span class="sr-only">Behance</span>
                   </a>
               </li>
             </ul>

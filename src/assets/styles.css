@@ -5,8 +5,25 @@
     padding: 0;
   }
 
+  .container-page {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    margin: 0;
+    padding: 0;
+  }
+
   .screen {
     display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .summary-title {
+    margin: 0;
+    padding: 0 0 0.5em 0;
   }
 
   .card {
@@ -33,9 +50,9 @@
     text-decoration: none;
   }
 
-  .row.jobtitle {
+  .jobtitle {
     margin-bottom: 0em;
-    margin-top: 1em;
+    margin-top: 0em;
   }
 
   .edu {
@@ -43,9 +60,9 @@
     padding: 0;
   }
 
-  h3#prof {
-    margin-top: 1em;
+  #prof {
     padding: 0;
+    margin: 0;
   }
 
   .school.print {

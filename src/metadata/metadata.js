@@ -2,7 +2,7 @@ module.exports = {
   name: "Berker Erol",
   title: "Full Stack Web Developer",
   facts: {
-    "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC - H2W 1C9</span>`,
+    "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC - H2W</span>`,
     "Github:": `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
                   <a href="https://github.com/berkererol">
                   <span class="print">github.com/berkererol</span>
@@ -65,13 +65,13 @@ module.exports = {
         "Micro Frontends",
       ],
       contents:
-        "Angular developer for building new UI features for Intact's instant-quote generating web application.",
+        "Angular developer for building new UI features for Intact's insurance quote web application, used by millions throughout Canada.",
       points: [
-        "Improved interface functionality of the new bundle quote engine, which generates quote for home and car insurance.",
-        "Built new Angular libraries within the Nx framework for migrating towards micro frontend architecture.",
-        "Implemented comprehensive end-to-end tests with and increased code coverage from 85% to 100%.",
+        "Developed new components using Angular and Storybook while applying reactive patterns in TypeScript (RxJS).",
+        "Built new standalone libraries within the Nx framework for migrating towards micro frontend architecture.",
+        "Implemented comprehensive end-to-end tests with Cypress and increased code coverage from 85% to 100%.",
         "Independently deployed code to testing environments and prepared Git branches for releases.",
-        "Succesfully managed JIRA tickets and maximized story completion by strong collaboration and communication.",
+        "Succesfully managed JIRA tickets and maximized story completion by providing actionable feedback and support.",
       ],
     },
     {
@@ -102,11 +102,11 @@ module.exports = {
         "Developer in the Secure Agreement Automation team, a SaaS application for digital authentication, e-signature and audit trail generation for contracts, used by most credit companies in EU.",
       points: [
         "Written bash scripts which cut down new client onboarding time from months to several weeks.",
-        "Developed ADA accessibility-compliant interface components in TypeScript using Angular framework.",
-        "Implemented unit tests using Karma and Jasmine, and increased coverage to 100%.",
-        "Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments.",
-        "Collaborated with the back end engineers to connect our frontend to Java API.",
-        "Integrated provider SDKs for face scanning and identity document processing.",
+        "Developed web accessibility-compliant (ADA) UI components in Angular, with SASS and Material UI.",
+        "Implemented unit tests with Karma and Jasmine, and increased code coverage to 100%.",
+        "Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.",
+        "Worked alongside backend developers to develop new RESTful APIs for architecting new business logic.",
+        "Integrated provider SDKs for mobile face capture, and verification.",
       ],
     },
     {
@@ -182,6 +182,36 @@ module.exports = {
       easily edit or cancel
       an appointment in a
       smooth user interface.`,
+    },
+    {
+      header: "User Inteface Design for Cook It",
+      website:
+        "https://www.behance.net/gallery/87084299/Cook-It-User-Interface",
+      skills: [
+        "Figma",
+        "Affinity Designer",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Canva",
+      ],
+      contents: `Development of a new design system for the new menu, and the rewards program for this Montreal start up.`,
+    },
+    {
+      header: "Architecture Projects",
+      website: "https://issuu.com/berker.erol/docs/portolio_june_2018_hq",
+      skills: [
+        "Rhinoceros 3D",
+        "Autodesk Autocad",
+        "Autodesk Revit",
+        "Autodesk 3Ds Max",
+        "Vray Render",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Canva",
+        "3D Rapid Prototyping",
+        "CNC milling",
+      ],
+      contents: `Compilation of architecture projects I have worked on.`,
     },
   ],
 };
