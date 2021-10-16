@@ -79,7 +79,7 @@ module.exports = {
       company: "OneSpan",
       location: "Montréal, Canada",
       website: "https://www.onespan.com",
-      time: "December 2019 - present",
+      time: "December 2019 - April 2021",
       badges: [
         "Angular",
         "React",
