@@ -211,7 +211,7 @@ module.exports = {
         "3D Rapid Prototyping",
         "CNC milling",
       ],
-      contents: `Compilation of architecture projects I have worked on.`,
+      contents: `Selection of architecture projects I have worked on.`,
     },
   ],
 };
