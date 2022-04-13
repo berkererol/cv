@@ -1,6 +1,6 @@
 {
-  "name": "cv-template",
-  "description": "The Curriculum Vitae Template",
+  "name": "berker-erol-cv",
+  "description": "frontend-developer-and-ux-designer",
   "scripts": {
     "build": "node src/build.js",
     "watch": "chokidar '**/*' -i 'dist/**/*' -c 'npm run build'",
@@ -9,20 +9,12 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sneas/cv-project.git"
-  },
   "keywords": [
     "cv",
     "resume"
   ],
-  "author": "Dmytro Snisarenko <dmytro@sneas.io>",
+  "author": "Berker Erol",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sneas/cv-project/issues"
-  },
-  "homepage": "https://github.com/sneas/cv-project#readme",
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "dayjs": "^1.8.28",
