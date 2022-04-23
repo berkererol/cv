@@ -136,32 +136,6 @@ module.exports = {
         "Integrated provider SDKs for mobile face capture, and verification.",
       ],
     },
-    {
-      title: "User Experience Designer",
-      company: "Chef Cook It",
-      location: "Montréal, Canada",
-      website: "https://www.chefcookit.com",
-      time: "May 2019 - August 2019",
-      badges: [
-        "Figma",
-        "Adobe XD",
-        "Sketch",
-        "Invision",
-        "Behance",
-        "Canva",
-        "Photoshop",
-        "Adobe Premiere Pro",
-        "Abstract",
-      ],
-      contents:
-        "Reconceived the user experience with a meticulous design system, which boosted client engagement for this emerging Montréal start-up.",
-      points: [
-        "Created a new menu page layout after an in-depth A/B testing, which tripled new subscription rates.",
-        "Designed mobile-first interface components on Figma for the front end application in React JS.",
-        "Lead the manufacturing process for Kit durable, a zero-waste food kit delivered to customers by bike.",
-        "Collaborated with the marketing team to develop new branding guidelines and social media templates.",
-      ],
-    },
   ],
   project: [
     {
