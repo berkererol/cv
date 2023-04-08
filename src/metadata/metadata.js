@@ -149,6 +149,7 @@ module.exports = {
         "CSS",
         "Unsplash API",
         "Merriam-Webster Dictionary API",
+        "Heroku"
       ],
       contents: `Flash card application
       that allows the user learn
