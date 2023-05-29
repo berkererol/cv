@@ -1,6 +1,6 @@
 module.exports = {
   name: "Berker Erol",
-  title: "Front End Developer & UX Designer",
+  title: "UX Designer & Frontend Developer",
   facts: {
     "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC - H2W</span>`,
     "Github:": `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
@@ -15,9 +15,10 @@ module.exports = {
       '<span class="fas fa-paper-plane screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
   },
   skills: [
+    ["Design systems"],
     ["TypeScript"],
     ["JavaScript ES6"],
-    ["Angular 12 (2+)"],
+    ["Angular v14 (2+)"],
     ["Nx Workspace"],
     ["Node JS"],
     ["React"],
@@ -43,11 +44,37 @@ module.exports = {
   ],
   plays: [
     {
+      title: "User Experience Designer (Design System Owner)",
+      company: "Genetec",
+      location: "Montréal, Canada",
+      website: "https://www.genetec.com/",
+      time: "May 2022 - May 2023",
+      badges: [
+        "Figma",
+        "Design Systems",
+        "Design Tokens",
+        "Prototyping",
+        "Wireframing",
+        "UX Design",
+        "UI Design",
+        "Stencil JS",
+        "Web Components",
+      ],
+      contents:
+        "Owner UX designer of the Gelato design system, the main reference guide used by UX designers and frontend developers to build new product features.",
+      points: [
+        "Researched, documented and designed new interface components (e.g. Date Input, Alert, Progress) and supervised UX developers to ensure 100% consistency between Figma and component package.",
+        "Lead the Design Token initiative, which leverages tokens in Figma to accelerate product-specific variations in the UI.",
+        "Inspected new UX prototypes for compliance to the design system, and refined current components in response to new feature requirements.",
+        "Mentored UX interns in their contributions to both Figma and frontend codebase, acting as a bridge between designers and developers."
+      ],
+    },
+    {
       title: "Front End Developer II",
       company: "Behaviour Interactive",
       location: "Montréal, Canada",
       website: "https://www.bhvr.com",
-      time: "November 2021 - present",
+      time: "November 2021 - April 2022",
       badges: [
         "React JS",
         "TypeScript",
@@ -66,7 +93,7 @@ module.exports = {
         "Maintained front-end code of the current Behaviour Account website, where gamers can synchronize their progression in the award-winning Dead by Deadlight game on different platforms (Steam, Stadia).",
         "Led the UX design process (research, design and code implementation) of a major promotion initiative for an upcoming new game, where gamers will redeem a game reward on the web application.",
         "Refactored the entire front end application using React JS for mobile use, established a design system, and implemented internationalization that supports 12 languages.",
-        "Collaborated with back end engineers to build asset security that would prevent any leak of future unreleased content, while allowing user-acceptance testing by external partners.",
+        "Collaborated with back end engineers to build asset security that would prevent any leak of future unreleased content.",
       ],
     },
     {
@@ -106,7 +133,7 @@ module.exports = {
       company: "OneSpan",
       location: "Montréal, Canada",
       website: "https://www.onespan.com",
-      time: "December 2019 - April 2021",
+      time: "January 2020 - April 2021",
       badges: [
         "Angular",
         "React",
