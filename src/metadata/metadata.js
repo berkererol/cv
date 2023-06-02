@@ -13,34 +13,31 @@ module.exports = {
     "Phone:": `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>+1-514-582-0964`,
     "Email:":
       '<span class="fas fa-paper-plane screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
+    "Website:":
+      '<span class="fas fa-link screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="https://berkererol.com/">berkererol.com</a>',
   },
   skills: [
     ["Design systems"],
     ["TypeScript"],
     ["JavaScript ES6"],
+    ["Adobe Suite"],
+    ["Figma"],
     ["Angular v14 (2+)"],
-    ["Nx Workspace"],
     ["Node JS"],
     ["React"],
     ["Redux (NgRx)"],
-    ["Docker"],
-    ["Kubernetes"],
+    ["UX Design"],
+    ["Wireframing"],
     ["RxJS"],
     ["HTML"],
-    ["jQuery"],
+    ["Prototyping"],
     ["SASS"],
     ["CSS"],
     ["Jest"],
     ["Material UI"],
     ["Storybook"],
-    ["GraphQL"],
-    ["CI/CD Pipelines"],
-    ["Git"],
-    ["Agile"],
-    ["SCRUM"],
-    ["JIRA"],
-    ["Adobe CS"],
-    ["Figma"],
+    ["UI Development"],
+    ["French"],
   ],
   plays: [
     {
@@ -125,7 +122,6 @@ module.exports = {
         "Built new standalone libraries within the Nx framework for migrating towards micro frontend architecture.",
         "Implemented comprehensive end-to-end tests with Cypress and increased code coverage from 85% to 100%.",
         "Independently deployed code to testing environments and prepared Git branches for releases.",
-        "Succesfully managed JIRA tickets and maximized story completion by providing actionable feedback and support.",
       ],
     },
     {
@@ -159,8 +155,6 @@ module.exports = {
         "Developed web accessibility-compliant (ADA) UI components in Angular, with SASS and Material UI.",
         "Implemented unit tests with Karma and Jasmine, and increased code coverage to 100%.",
         "Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.",
-        "Worked alongside backend developers to develop new RESTful APIs for architecting new business logic.",
-        "Integrated provider SDKs for mobile face capture, and verification.",
       ],
     },
   ],
@@ -189,30 +183,6 @@ module.exports = {
       and integrated APIs.`,
     },
     {
-      header: "Jungle",
-      website: "https://github.com/berkererol/jungle-rails",
-      skills: ["Ruby", "Rails", "Bootstrap", "PostgreSQL", "CSS", "Stripe API"],
-      contents: `An e-commerce web
-      application built with
-      Ruby 2.5.1 and Rails
-      4.2. Users can view
-      items in categories,
-      add items to cart and
-      checkout using
-      their credit cards.`,
-    },
-    {
-      header: "Scheduler",
-      website: "https://github.com/berkererol/scheduler",
-      skills: ["React", "Axios", "Node JS", "Cypress", "Sass CSS"],
-      contents: `Scheduler is a singlepage React app that
-      lets users book an
-      interview. Users can
-      easily edit or cancel
-      an appointment in a
-      smooth user interface.`,
-    },
-    {
       header: "User Inteface Design for Cook It",
       website:
         "https://www.behance.net/gallery/87084299/Cook-It-User-Interface",
@@ -227,7 +197,7 @@ module.exports = {
     },
     {
       header: "Architecture Projects",
-      website: "https://issuu.com/berker.erol/docs/portolio_june_2018_hq",
+      website: "https://berkererol.com/architecture-projects",
       skills: [
         "Rhinoceros 3D",
         "Autodesk Autocad",

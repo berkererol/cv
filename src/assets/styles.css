@@ -206,6 +206,14 @@ p {
   margin-bottom: 2em;
 }
 @media print {
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    padding: 0;
+  } 
+
   .col-print-1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
