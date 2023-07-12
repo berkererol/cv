@@ -2,7 +2,7 @@ module.exports = {
   name: "Berker Erol",
   title: "UX Designer & Frontend Developer",
   facts: {
-    "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC - H2W</span>`,
+    "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC</span>`,
     "Github:": `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
                   <a href="https://github.com/berkererol">
                   <span class="print">github.com/berkererol</span>
@@ -116,7 +116,7 @@ module.exports = {
         "Micro Frontends",
       ],
       contents:
-        "Angular developer for building new UI features for Intact's insurance quote web application, used by millions throughout Canada.",
+        "Angular developer for building new UI features for Intact's web application for quote generation, used by millions throughout Canada.",
       points: [
         "Developed new components using Angular and Storybook while applying reactive patterns in TypeScript (RxJS).",
         "Built new standalone libraries within the Nx framework for migrating towards micro frontend architecture.",
@@ -157,6 +157,32 @@ module.exports = {
         "Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.",
       ],
     },
+    {
+      title: "User Experience Designer",
+      company: "Chef Cook It",
+      location: "Montréal, Canada",
+      website: "https://www.chefcookit.com",
+      time: "May 2019 - August 2019",
+      badges: [
+        "Figma",
+        "Adobe XD",
+        "Sketch",
+        "Invision",
+        "Behance",
+        "Canva",
+        "Photoshop",
+        "Adobe Premiere Pro",
+        "Abstract",
+      ],
+      contents:
+        "One of the main designers who worked on the new Cook It website, a meal kit service used by thousands of customers in Canada.",
+      points: [
+        "Created a new menu page layout after an in-depth A/B testing, which increased new subscriptions and client retention.",
+        "Designed mobile-first interface components on Figma for the front end application in React JS.",
+        "Lead the manufacturing process for Kit durable, a zero-waste food kit delivered to customers by bike.",
+        "Collaborated with the marketing team to develop new branding guidelines and social media templates.",
+      ],
+    }
   ],
   project: [
     {

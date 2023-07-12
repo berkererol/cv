@@ -33,23 +33,28 @@ const html = template({
 fs.writeFileSync(outputDir + "/index.html", html);
 
 buildPdf = async function (inputFile, outputFile) {
-  const browser = await Puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto(`file://${inputFile}`, {
-    waitUntil: "networkidle0",
-  });
-  await page.pdf({
-    path: outputFile,
-    format: "Letter",
-    border: 0,
-    margin: {
-      top: "1cm",
-      right: "0cm",
-      bottom: "1cm",
-      left: "0cm",
-    },
-  });
-  await browser.close();
+  try {
+    const browser = await Puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto(`file://${inputFile}`, {
+      waitUntil: "networkidle0",
+    });
+    await page.pdf({
+      path: outputFile,
+      format: "Letter",
+      border: 0,
+      margin: {
+        top: "1cm",
+        right: "0cm",
+        bottom: "1cm",
+        left: "0cm",
+      },
+    });
+    await browser.close();
+  } catch (error) {
+    // Handle the error here
+    console.error("An error occurred:", error);
+  }
 };
 
 // Build PDF
