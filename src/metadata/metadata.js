@@ -1,6 +1,6 @@
 module.exports = {
   name: "Berker Erol",
-  title: "UX Designer & Front End Developer",
+  title: "UX Designer & Front-End Developer",
   facts: {
     "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC</span>`,
     "Github:": `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
@@ -58,12 +58,12 @@ module.exports = {
         "Web Components",
       ],
       contents:
-        "Owner UX designer of the Gelato design system, the main reference guide used by UX designers and frontend developers to build new product features.",
+        "Owner UX designer of the Gelato design system, the main reference guide used by UX designers and front-end developers to build new product features.",
       points: [
         "Researched, documented and designed new interface components (e.g. Date Input, Alert, Progress) and supervised UX developers to ensure 100% consistency between Figma and component package.",
         "Lead the Design Token initiative, which leverages tokens in Figma to accelerate product-specific variations in the UI.",
         "Inspected new UX prototypes for compliance to the design system, and refined current components in response to new feature requirements.",
-        "Mentored UX interns in their contributions to both Figma and frontend codebase, acting as a bridge between designers and developers."
+        "Mentored UX interns in their contributions to both Figma and front-end codebase, acting as a bridge between designers and developers."
       ],
     },
     {
@@ -119,7 +119,7 @@ module.exports = {
         "Angular developer for building new UI features for Intact's web application for quote generation, used by millions throughout Canada.",
       points: [
         "Developed new components using Angular and Storybook while applying reactive patterns in TypeScript (RxJS).",
-        "Built new standalone libraries within the Nx framework for migrating towards micro frontend architecture.",
+        "Built new standalone libraries within the Nx framework for migrating towards micro front-end architecture.",
         "Implemented comprehensive end-to-end tests with Cypress and increased code coverage from 85% to 100%.",
         "Independently deployed code to testing environments and prepared Git branches for releases.",
       ],
@@ -154,7 +154,7 @@ module.exports = {
         "Written bash scripts which cut down new client onboarding time from months to several weeks.",
         "Developed web accessibility-compliant (ADA) UI components in Angular, with SASS and Material UI.",
         "Implemented unit tests with Karma and Jasmine, and increased code coverage to 100%.",
-        "Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.",
+        "Integrated front-end application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.",
       ],
     },
     {
