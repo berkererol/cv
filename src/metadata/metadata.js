@@ -1,6 +1,6 @@
 module.exports = {
   name: "Berker Erol",
-  title: "UX Designer & Frontend Developer",
+  title: "UX Designer & Front End Developer",
   facts: {
     "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC</span>`,
     "Github:": `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
