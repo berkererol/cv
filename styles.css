@@ -23,7 +23,11 @@
 
   .summary-title {
     margin: 0;
-    padding: 0 0 0.5em 0;
+    padding: 0 0 0.25em 0;
+  }
+
+  .skills {
+    padding: 0 0 0.25em 0;
   }
 
   .card {
@@ -63,10 +67,15 @@
   #prof {
     padding: 0;
     margin: 0;
+    padding-bottom: 0.25em;
   }
 
-  .school.print {
+  .school.print:nth-of-type(n+2) {
     padding-top: 1em;
+  }
+
+  .education-title {
+    padding-bottom: 0.5em;
   }
 }
 
