@@ -1,6 +1,6 @@
 module.exports = {
   name: "Berker Erol",
-  title: "UX Designer & Front-End Developer",
+  title: "Front-End Developer & UX Designer",
   facts: {
     "Address:": `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC</span>`,
     "Github:": `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
@@ -17,21 +17,22 @@ module.exports = {
       '<span class="fas fa-link screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="https://berkererol.com/">berkererol.com</a>',
   },
   skills: [
-    ["Design systems"],
     ["TypeScript"],
     ["JavaScript ES6"],
     ["Adobe Suite"],
     ["Figma"],
-    ["Angular v14 (2+)"],
+    ["Angular v17"],
     ["Node JS"],
-    ["React"],
-    ["Redux (NgRx)"],
-    ["UX Design"],
+    ["React v18"],
+    ["Redux"],
+    ["User Research"],
+    ["UI Design"],
     ["Wireframing"],
     ["RxJS"],
     ["HTML"],
     ["Prototyping"],
     ["SASS"],
+    ["Design systems"],
     ["CSS"],
     ["Jest"],
     ["Material UI"],
@@ -40,6 +41,33 @@ module.exports = {
     ["French"],
   ],
   plays: [
+    {
+      title: "Front-End Developer",
+      company: "The BoxOffice Company",
+      location: "Montréal, Canada",
+      website: "https://company.boxoffice.com/",
+      time: "August 2023 - present",
+      badges: [
+        "React",
+        "Redux",
+        "Redux Saga",
+        "TypeScript",
+        "Jest",
+        "C#",
+        ".NET Framework",
+        "Sentry",
+        "Google Tag Manager",
+        "Google Analytics"
+      ],
+      contents:
+        "Front-End developer of the Boost ticketing project, facilitating movie ticketing, seat selection, concession purchase, and gift card redemption.",
+      points: [
+        "Spearheaded the development of new features and expanded business capabilities while coding in TypeScript and using React, Redux, and Jest.",
+        "Created a scalable analytics (GA4) architecture for enhanced user event tracking, enabling the company to offer a new, revenue-generating product feature which provides in-depth user engagement insights.",
+        "Integrated Sentry plug-in for real-time bug tracking, skillfully identifying and rectifying complex issues, thereby substantially improving product reliability.",
+        "Collaborated with the designers to resolve UX issues in the edge case scenarios, provided corrections, and overall facilitated the design process." 
+      ],
+    },
     {
       title: "User Experience Designer (Design System Owner)",
       company: "Genetec",
@@ -63,17 +91,16 @@ module.exports = {
         "Researched, documented and designed new interface components (e.g. Date Input, Alert, Progress) and supervised UX developers to ensure 100% consistency between Figma and component package.",
         "Lead the Design Token initiative, which leverages tokens in Figma to accelerate product-specific variations in the UI.",
         "Inspected new UX prototypes for compliance to the design system, and refined current components in response to new feature requirements.",
-        "Mentored UX interns in their contributions to both Figma and front-end codebase, acting as a bridge between designers and developers."
       ],
     },
     {
-      title: "Front End Developer II",
+      title: "Front-End Developer",
       company: "Behaviour Interactive",
       location: "Montréal, Canada",
       website: "https://www.bhvr.com",
       time: "November 2021 - April 2022",
       badges: [
-        "React JS",
+        "React",
         "TypeScript",
         "Javascript",
         "Cypress",
@@ -85,16 +112,15 @@ module.exports = {
         "Steam API",
       ],
       contents:
-        "Intermediate front-end developer and UX designer assigned for Behaviour Account, a web platform where gamers manage their account.",
+        "Front-End developer and UX designer assigned for Behaviour Account, a web platform where gamers manage their account.",
       points: [
         "Maintained front-end code of the current Behaviour Account website, where gamers can synchronize their progression in the award-winning Dead by Deadlight game on different platforms (Steam, Stadia).",
         "Led the UX design process (research, design and code implementation) of a major promotion initiative for an upcoming new game, where gamers will redeem a game reward on the web application.",
-        "Refactored the entire front end application using React JS for mobile use, established a design system, and implemented internationalization that supports 12 languages.",
-        "Collaborated with back end engineers to build asset security that would prevent any leak of future unreleased content.",
+        "Refactored the entire front-end application using React for mobile use, established a design system, and implemented internationalization that supports 12 languages.",
       ],
     },
     {
-      title: "Front End Developer",
+      title: "Front-End Developer",
       company: "Intact Insurance",
       location: "Montréal, Canada",
       website: "https://www.intact.ca",
@@ -178,7 +204,7 @@ module.exports = {
         "One of the main designers who worked on the new Cook It website, a meal kit service used by thousands of customers in Canada.",
       points: [
         "Created a new menu page layout after an in-depth A/B testing, which increased new subscriptions and client retention.",
-        "Designed mobile-first interface components on Figma for the front end application in React JS.",
+        "Designed mobile-first interface components on Figma for the front-end application in React.",
         "Lead the manufacturing process for Kit durable, a zero-waste food kit delivered to customers by bike.",
         "Collaborated with the marketing team to develop new branding guidelines and social media templates.",
       ],

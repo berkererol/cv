@@ -7,7 +7,7 @@
     <meta name="author" content="Berker Erol">
     <meta property='og:Résumé' content='Berker Erol Official Résumé' />
     <meta property='og:image' content='https://i.ibb.co/tXCXBtH/cv-cover.jpg' />
-    <meta property='og:description' content='Berker Erol - Front-end Web Developer' />
+    <meta property='og:description' content='Berker Erol - Front-End Web Developer' />
     <meta property='og:url' content='https://berkererol.github.io/cv/' />
     <title>{{ name }}. {{ title }}</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -28,10 +28,9 @@
                 <h1 id="name">{{ name }}</h1>
                 <h3 id="title"> {{title}}</h3>
 
-                <button class="btn btn-primary btn-sm screen">
-                    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o"
-                                aria-hidden="true"></i>Download CV</a></span>
-                </button>
+                <a href="{{ pdfFileName }}" class="btn btn-primary btn-sm screen" role="button">
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download CV
+                </a>
                 <p>
                     <time datetime="{{ buildinfo.date }}" class="text-muted screen">Last update: {{ updated }}</time>
                 </p>
@@ -46,21 +45,20 @@
             </div>
         </div>
         <div class="summary">
-            <h4 class="summary-title">Summary</h4>
+            <h4 class="summary-title"><strong>Summary</strong></h4>
             <div class="screen">
                 <br>
             </div>
             <div>
-                Accomplished user experience designer and front-end developer with a total of 4+ years of experience with
-                web applications and digital products.
+                Accomplished Front-End developer and user experience designer with more than of 5 years of experience with web applications and digital products.
             </div>
             <ul>
                 <li>
-                    UX designer specialized in Design Systems and design thinking process. 
+                    Front-End developer specialized in Angular and React, coding with JavaScript, TypeScript, HTML
+                    CSS and several other libraries.
                 </li>
                 <li>
-                    Front-end developer specialized in Angular and React JS—coding with JavaScript, TypeScript, HTML
-                    CSS.
+                    UX designer specialized in Design Systems and design thinking process. 
                 </li>
                 <li>
                     Fully bilingual team player (French) who can positively build rapport with other contributors to improve collaboration.
@@ -71,11 +69,11 @@
             </ul>
 
         </div>
-        <h4 class="">Skills</h4>
-        <div>
+        <h4 class="screen"><strong>Skills</strong></h4>
+        <div class="screen">
             <br>
         </div>
-        <div class="row edu">
+        <div class="row edu screen">
             {{#each skills}}
             <div class="col-auto screen">
                 <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
@@ -86,9 +84,9 @@
             </div>
             {{/each}}
         </div>
-        </br class="screen">
-        <h4 id="prof">Professional Work Experience</h4>
-        </br class="screen">
+        <br class="screen">
+        <h4 id="prof"><strong>Professional Work Experience</strong> </h4>
+        <br class="screen">
         {{#each plays}}
         <div class="card mb-4 edu jobs">
             <div class="card-body">
@@ -122,7 +120,7 @@
 
         {{/each}}
 
-        <h4 class="screen">Education</h4>
+        <h4 class="screen"><strong>Education</strong></h4>
         <div class="screen">
             <br class="screen">
         </div>
@@ -158,7 +156,7 @@
         </div>
         <!-- For printing only -->
         <div class="print">
-            <h3 class="print">Education</h3>
+            <h4 class="print education-title"><strong>Education</strong></h4>
 
             <div class="row school print">
                 <h5 class="col-md-3">
@@ -189,110 +187,16 @@
         <div class="print">
             <br>
         </div>
-        <!-- Certificates  Section -->
-        <h3 class="print">Certificates</h3>
-        <div class="print">
-            <br>
-        </div>
-        <div class="card mb-4 print">
-
-            <div class="row card-body">
-                <h6 class="col-md-3">
-                    NAD School of Digital Arts
-                </h6>
-                <div class="col-md-5">
-                    After Effects Advanced
-                </div>
-
-                <div class="col-md-4 text-muted">
-                    June 2023
-                </div>
-                <div class="col-md-12">
-                    <a href="https://drive.google.com/file/d/1OKQmC5OEcbGJenzMzPNCg_fb0QriTDg1/view" class="small">view
-                        certificate</a>
-                </div>
+        <h4 class="print skills"><strong>Skills</strong></h4>
+        <div class="row edu print">
+            {{#each skills}}
+            <div class="col-print-2 col-md-2 print">
+                <small>{{ this.[0] }}</small>
             </div>
-        </div>
-
-        <div class="card mb-4 print">
-
-            <div class="row card-body">
-                <h6 class="col-md-3">
-                    Google
-                </h6>
-                <div class="col-md-5">
-                    Foundations of User Experience Design
-                </div>
-
-                <div class="col-md-4 text-muted">
-                    June 2021
-                </div>
-                <div class="col-md-12">
-                    <a href="https://www.coursera.org/account/accomplishments/verify/72CKVFBX8NUK" class="small">view certificate</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card mb-4 print">
-
-            <div class="row card-body">
-                <h6 class="col-md-3">
-                    Dawson College
-                </h6>
-                <div class="col-md-5">
-                    Intro to Wordpress 
-                </div>
-
-                <div class="col-md-4 text-muted">
-                    December 2021
-                </div>
-                <div class="col-md-12">
-                    <a href="https://drive.google.com/file/d/14qlXzhqqwVhooI4eGo5P2pdJwsrKpjcC/view?usp=drive_link" class="small">view certificate</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card mb-4 print">
-
-            <div class="row card-body">
-                <h6 class="col-md-3">
-                    Collège de Maisonneuve
-                </h6>
-                <div class="col-md-5">
-                    UX Design and Design Thinking
-                </div>
-
-                <div class="col-md-4 text-muted">
-                    February 2021
-                </div>
-                <div class="col-md-12">
-                    <a href="https://drive.google.com/file/d/1ohPt8woroSxuQgHLLKlUlE-X81ZGSuvh/view" class="small">view
-                        certificate</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card mb-4 print">
-
-            <div class="row card-body">
-                <h6 class="col-md-3">
-                    Angular University (Udemy)
-                </h6>
-                <div class="col-md-5">
-                    Reactive Extensions Angular Course with RxJS
-                </div>
-
-                <div class="col-md-4 text-muted">
-                    January 2021
-                </div>
-                <div class="col-md-12">
-                    <a href="https://www.udemy.com/certificate/UC-a6867eab-fa0f-4021-b15c-0d151025f602/" class="small">view
-                        certificate</a>
-                </div>
-            </div>
+            {{/each}}
         </div>
         <!-- Certificates Screen Section -->
-        <h4 class="screen">Certificates</h4>
+        <h4 class="screen"><strong>Certificates</strong></h4>
         <div class="screen">
             <br>
         </div>
@@ -394,7 +298,7 @@
             </div>
         </div>
 
-        <h4 class="screen">Projects</h4>
+        <h4 class="screen"><strong>Projects</strong></h4>
 
         {{#each project}}
         <div class="card mt-4 screen">
@@ -415,7 +319,7 @@
     </div>
     <div class="screen">
         <footer class="ux">
-            <h4>Berker Erol — 2023. Montreal, Canada</h4>
+            <h4>Berker Erol — 2024. Montreal, Canada</h4>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/berkererol" target="_blank">
@@ -436,7 +340,7 @@
                     </a>
                 </li>
             </ul>
-            <p><small>&copy; 2023 Berker Erol. All rights reserved.</small></p>
+            <p><small>&copy; 2024 Berker Erol. All rights reserved.</small></p>
         </footer>
     </div>
 </body>
