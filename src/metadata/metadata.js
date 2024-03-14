@@ -1,6 +1,7 @@
 module.exports = {
   name: 'Berker Erol',
-  title: 'Front-End Developer & UX Designer',
+  title1: 'Front-End Developer',
+  title2: 'User Experience Designer',
   printContacts: {
     'Address:': `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC</span>`,
     'Github:': `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
