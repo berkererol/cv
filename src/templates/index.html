@@ -37,39 +37,86 @@
 
   <body>
     <div class="container-page">
-      <div class="row header">
-        <div class="col-md-6 col-print-6">
-          <h1 id="name">{{ name }}</h1>
-          <h3 id="title">{{title}}</h3>
+      <div class="row header d-flex justify-content-center flex-column">
+        <h1 class="screen text-center" id="name">{{ name }}</h1>
+        <h3 class="screen text-center" id="title">{{title}}</h3>
+      </div>
+      <div class="screen d-flex justify-content-center">
+        <a
+          href="{{ pdfFileName }}"
+          class="btn btn-primary btn-sm screen mr-2"
+          role="button"
+        >
+          <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download CV
+        </a>
 
-          <a
-            href="{{ pdfFileName }}"
-            class="btn btn-primary btn-sm screen"
-            role="button"
-          >
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download CV
-          </a>
-          <p>
-            <time datetime="{{ buildinfo.date }}" class="text-muted screen"
-              >Last update: {{ updated }}</time
-            >
-          </p>
+        <a
+          href="mailto:berkererol@gmail.com"
+          class="btn btn-link btn-sm screen"
+          target="_blank"
+        >
+          <span class="fas fa-paper-plane" aria-hidden="true"></span> Email
+        </a>
+      </div>
+      <div class="row header">
+        <div class="col-md-7 col-print-6">
+          <h1 class="print" id="name">{{ name }}</h1>
+          <h3 class="print" id="title">{{title}}</h3>
         </div>
-        <div class="col-md-6 col-print-6">
+        <div class="col-md-5 col-print-6 print">
           <dl class="row header">
-            {{#each facts}}
+            {{#each printContacts}}
             <dt class="col-md-3 contact print">{{ @key }}</dt>
             <dd class="col-md-9 contact">{{{ this }}}</dd>
             {{/each}}
           </dl>
         </div>
       </div>
-      <div class="summary">
+      <div class="screen">
+        <div class="ux d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-3 mt-4 mb-4 external-link">
+                <a
+                  href="https://www.linkedin.com/in/berkererol"
+                  target="_blank"
+                >
+                  <span class="fab fa-linkedin" aria-hidden="true"></span>
+                  <br />
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3 mt-4 mb-4 external-link">
+                <a href="https://www.github.com/berkererol" target="_blank">
+                  <span class="fab fa-github-square" aria-hidden="true"></span>
+                  <br />
+                  <span>Github</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3 mt-4 mb-4 external-link">
+                <a href="https://www.behance.net/berkererol" target="_blank">
+                  <span class="fab fa-behance" aria-hidden="true"></span>
+                  <br />
+                  <span>Behance</span>
+                </a>
+              </div>
+              <div class="col-6 col-md-3 mt-4 mb-4 external-link">
+                <a href="https://www.berkererol.com" target="_blank">
+                  <span class="fa fa-briefcase" aria-hidden="true"></span>
+                  <br />
+                  <span>Portfolio</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="summary mt-1">
         <h4 class="summary-title"><strong>Summary</strong></h4>
         <div class="screen">
           <br />
         </div>
-        <div>
+        <div class="mb-2">
           <strong>
             Skilled Front-End Developer and User Experience Designer with a
             track record of over five years in developing web
@@ -306,32 +353,11 @@
         </div>
       </div>
       {{/each}}
-    </div>
-    <div class="screen">
-      <footer class="ux">
-        <h4>Berker Erol — 2024. Montreal, Canada</h4>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/berkererol" target="_blank">
-              <span class="fab fa-linkedin" aria-hidden="true"></span>
-              <span class="sr-only">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.github.com/berkererol" target="_blank">
-              <span class="fab fa-github-square" aria-hidden="true"></span>
-              <span class="sr-only">Github</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.behance.net/berkererol" target="_blank">
-              <span class="fab fa-behance" aria-hidden="true"></span>
-              <span class="sr-only">Behance</span>
-            </a>
-          </li>
-        </ul>
-        <p><small>&copy; 2024 Berker Erol. All rights reserved.</small></p>
-      </footer>
+      <div class="d-flex justify-content-center align-items-center screen mt-5">
+        <p class="screen">
+          <small>&copy; 2024 Berker Erol. All rights reserved.</small>
+        </p>
+      </div>
     </div>
   </body>
 </html>
