@@ -311,7 +311,18 @@ p {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  #title {
+  #name {
+letter-spacing: -1px;
+font-size: 48px;
+  }
+
+  #title1 {
     font-weight: 300;
+    font-size: 24px;
+  }
+
+  #title2 {
+    font-weight: 300;
+    font-size: 24px;
   }
 }
