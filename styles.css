@@ -84,24 +84,6 @@
     display: none;
   }
 
-  .ux {
-    text-align: center;
-    padding: 2rem 0 2rem 0;
-  }
-
-  .ux ul {
-    list-style-type: none;
-    margin: 2rem 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 3rem;
-    font-size: 2rem;
-    li {
-      padding: 1rem 0 1rem 0;
-    }
-  }
-
   .row.edu {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
   }
@@ -122,14 +104,22 @@
   #name {
     font-family: 'Roboto Slab', serif;
     font-size: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
 
-  #title {
+  #title1 {
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     letter-spacing: -0.05em;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #title2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: -0.05em;
+    margin-bottom: 2em;
   }
 
   .text-muted {
@@ -211,13 +201,45 @@ p {
   margin-bottom: 2em;
 }
 
-.external-link {
-  a {
-    color: black;
-  }
+.external-link:hover {
+  background-color: rgba(228, 228, 228, 0.703);
+  border-radius: 2em;
+  cursor: pointer;
+}
 
-  a:hover {
-    color: #0d6efd;
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* This will space out the icons evenly */
+  text-align: center;
+  margin-top: 1em;
+}
+
+.links-container .external-link {
+  width: 40%;
+  box-sizing: border-box;
+  margin: 1%;
+  padding: 1em;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .links-container .external-link {
+    width: 20%;
+    margin: 1%;
+    &:hover {
+      border-radius: 1em;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .links-container .external-link {
+    width: 15%;
+    margin: 1%;
+    &:hover {
+      border-radius: 1em;
+    }
   }
 }
 
