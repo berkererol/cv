@@ -23,7 +23,7 @@
 
   .summary-title {
     margin: 0;
-    padding: 0 0 0.25em 0;
+    padding: 0 0 1em 0;
   }
 
   .skills {
@@ -67,7 +67,7 @@
   #prof {
     padding: 0;
     margin: 0;
-    padding-bottom: 0.25em;
+    padding-bottom: 1em;
   }
 
   .school.print:nth-of-type(n + 2) {
@@ -84,37 +84,22 @@
     display: none;
   }
 
-  footer.ux {
-    padding-top: 2em;
-    height: 15em;
-    background-color: #f1f1f1;
+  .ux {
     text-align: center;
-    opacity: 1;
-    background-image: linear-gradient(#ffffff 0.8px, transparent 0.8px),
-      linear-gradient(90deg, #ffffff 0.8px, transparent 0.8px),
-      linear-gradient(#ffffff 0.4px, transparent 0.4px),
-      linear-gradient(90deg, #ffffff 0.4px, #f1f1f1 0.4px);
-    background-size:
-      20px 20px,
-      20px 20px,
-      4px 4px,
-      4px 4px;
-    background-position:
-      -0.8px -0.8px,
-      -0.8px -0.8px,
-      -0.4px -0.4px,
-      -0.4px -0.4px;
+    padding: 2rem 0 2rem 0;
   }
 
-  footer ul {
+  .ux ul {
     list-style-type: none;
-    padding: 0;
     margin: 2rem 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     gap: 3rem;
-    font-size: 3rem;
+    font-size: 2rem;
+    li {
+      padding: 1rem 0 1rem 0;
+    }
   }
 
   .row.edu {
@@ -225,6 +210,17 @@ p {
   margin-top: 1em;
   margin-bottom: 2em;
 }
+
+.external-link {
+  a {
+    color: black;
+  }
+
+  a:hover {
+    color: #0d6efd;
+  }
+}
+
 @media print {
   h1,
   h2,
