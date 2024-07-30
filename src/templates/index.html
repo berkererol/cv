@@ -1,366 +1,308 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Berker Erol" />
-    <meta property="og:Résumé" content="Berker Erol Official Résumé" />
-    <meta property="og:image" content="https://i.ibb.co/tXCXBtH/cv-cover.jpg" />
-    <meta
-      property="og:description"
-      content="Berker Erol - Front-End Developer CV"
-    />
-    <meta property="og:url" content="https://berkererol.github.io/cv/" />
-    <title>{{ name }} - {{ title1 }} & {{ title2 }}</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/3210fec805.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <div class="container-page">
-      <div class="row header d-flex justify-content-center flex-column">
-        <h1 class="screen text-center" id="name">{{ name }}</h1>
-        <h3 class="screen text-center" id="title1">{{title1}}</h3>
-        <h3 class="screen text-center" id="title2">{{title2}}</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Berker Erol" />
+  <meta property="og:Résumé" content="Berker Erol Official Résumé" />
+  <meta property="og:image" content="https://i.ibb.co/WvD5ChW/cv-social-media.jpg" />
+  <meta property="og:description" content="Berker Erol - Front-End Developer CV" />
+  <meta property="og:url" content="https://berkererol.github.io/cv/" />
+  <title>{{ name }} - {{ title1 }} & {{ title2 }}</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3210fec805.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-page">
+    <div class="row header d-flex justify-content-center flex-column">
+      <h1 class="screen text-center" id="name">{{ name }}</h1>
+      <h3 class="screen text-center" id="title1">{{title1}}</h3>
+      <h3 class="screen text-center" id="title2">{{title2}}</h3>
+    </div>
+    <div class="screen d-flex justify-content-center">
+      <a href="{{ pdfFileName }}" class="btn btn-primary btn-sm screen mr-4" role="button">
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download CV
+      </a>
+
+      <a href="mailto:berkererol@gmail.com" class="btn btn-link btn-sm screen" target="_blank">
+        <span class="fas fa-paper-plane" aria-hidden="true"></span> Email
+      </a>
+    </div>
+    <div class="row header">
+      <div class="col-md-7 col-print-6">
+        <h1 class="print" id="name">{{ name }}</h1>
+        <h3 class="print" id="title1">{{title1}}</h3>
+        <h3 class="print" id="title2">& {{title2}}</h3>
       </div>
-      <div class="screen d-flex justify-content-center">
-        <a
-          href="{{ pdfFileName }}"
-          class="btn btn-primary btn-sm screen mr-4"
-          role="button"
-        >
-          <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download CV
-        </a>
-
-        <a
-          href="mailto:berkererol@gmail.com"
-          class="btn btn-link btn-sm screen"
-          target="_blank"
-        >
-          <span class="fas fa-paper-plane" aria-hidden="true"></span> Email
-        </a>
-      </div>
-      <div class="row header">
-        <div class="col-md-7 col-print-6">
-          <h1 class="print" id="name">{{ name }}</h1>
-          <h3 class="print" id="title1">{{title1}}</h3>
-          <h3 class="print" id="title2">& {{title2}}</h3>
-        </div>
-        <div class="col-md-5 col-print-6 print">
-          <dl class="row header">
-            {{#each printContacts}}
-            <dt class="col-md-3 contact print">{{ @key }}</dt>
-            <dd class="col-md-9 contact">{{{ this }}}</dd>
-            {{/each}}
-          </dl>
-        </div>
-      </div>
-      <div
-        class="d-flex space-end justify-content-center text-center links-container screen"
-      >
-        <a
-          href="https://www.linkedin.com/in/berkererol"
-          class="mt-2 mb-2 mr-2 ml-2 external-link screen"
-          target="_blank"
-        >
-          <span class="fab fa-linkedin" aria-hidden="true"></span>
-          <br />
-          <span>LinkedIn</span>
-        </a>
-        <a
-          class="mt-2 mb-2 mr-2 ml-2 external-link screen"
-          href="https://www.github.com/berkererol"
-          target="_blank"
-        >
-          <span class="fab fa-github-square" aria-hidden="true"></span>
-          <br />
-          <span>Github</span>
-        </a>
-        <a
-          class="mt-2 mb-2 mr-2 ml-2 external-link screen"
-          href="https://www.behance.net/berkererol"
-          target="_blank"
-        >
-          <span class="fab fa-behance" aria-hidden="true"></span>
-          <br />
-          <span>Behance</span>
-        </a>
-        <a
-          class="mt-2 mb-2 mr-2 ml-2 external-link screen"
-          href="https://www.berkererol.com"
-          target="_blank"
-        >
-          <span class="fa fa-briefcase" aria-hidden="true"></span>
-          <br />
-          <span>Portfolio</span>
-        </a>
-      </div>
-      <div class="summary mt-1">
-        <h4 class="summary-title"><strong>Summary</strong></h4>
-        <div class="screen">
-          <br />
-        </div>
-        <div class="mb-2">
-          <strong>
-            Skilled Front-End Developer and User Experience Designer with a
-            track record of over five years in building web
-            applications.</strong
-          >
-        </div>
-        <ul>
-          <li>
-            Front-End developer specialized in Angular and React, coding with
-            JavaScript, TypeScript, HTML CSS and several other libraries.
-          </li>
-          <li>
-            UX designer specialized in Design Systems and design thinking
-            process.
-          </li>
-          <li>
-            Fully bilingual team player (French) who can positively build
-            rapport with other contributors to improve collaboration.
-          </li>
-          <li>
-            Curious experimenter who will go above and beyond the project scope,
-            and deliver exceptional products.
-          </li>
-        </ul>
-      </div>
-      <h4 class="screen"><strong>Skills</strong></h4>
-      <div class="screen">
-        <br />
-      </div>
-      <div class="row edu screen">
-        {{#each skills}}
-        <div class="col-auto screen">
-          <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
-        </div>
-
-        <div class="col-print-2 col-md-2 print">
-          <small>{{ this.[0] }}</small>
-        </div>
-        {{/each}}
-      </div>
-      <br class="screen" />
-      <h4 id="prof"><strong>Professional Work Experience</strong></h4>
-      <br class="screen" />
-      {{#each plays}}
-      <div class="card mb-4 edu jobs">
-        <div class="card-body">
-          <div class="row jobtitle">
-            <h4 class="col-md-8 jobtitle">{{ title }}</h4>
-            <span class="col-md-4">{{ time }}</span>
-          </div>
-          <div class="row mb-2">
-            <h5 class="col-md-8"><a href="{{ website }}">{{ company }}</a></h5>
-            <span class="col-md-4 text-muted">{{ location }}</span>
-          </div>
-          <div class="col-12">{{{markdown contents}}}</div>
-          <ul>
-            {{#each points }}
-            <li>{{ this }}</li>
-            {{/each}}
-          </ul>
-        </div>
-        <div class="card-body">
-          <div>
-            <h6>TECH STACK</h6>
-            {{#each badges }}
-            <span class="badge badge-primary">&middot; {{ this }}</span>
-            {{/each}}
-          </div>
-        </div>
-      </div>
-
-      {{/each}}
-
-      <h4 class="screen"><strong>Education</strong></h4>
-      <div class="screen">
-        <br class="screen" />
-      </div>
-
-      <div class="card mb-4 screen">
-        <div class="row card-body">
-          <div class="col-md-3">
-            <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp"
-              >Lighthouse Labs</a
-            >
-          </div>
-          <div class="col-md-5">
-            <p>Full Stack Web Development Bootcamp</p>
-            <small>12 weeks-long, intensive coding bootcamp</small>
-          </div>
-
-          <div class="col-md-4 text-muted">August 2019 - November 2019</div>
-        </div>
-        <hr />
-        <div class="row card-body">
-          <div class="col-md-3">
-            <a href="https://www.mcgill.ca/architecture/programs"
-              >McGill University</a
-            >
-          </div>
-          <div class="col-md-5">
-            <p>Bachelor of Science in Architecture</p>
-          </div>
-          <div class="col-md-4 text-muted">September 2011 - June 2015</div>
-        </div>
-      </div>
-      <!-- For printing only -->
-      <div class="print">
-        <h4 class="print education-title"><strong>Education</strong></h4>
-
-        <div class="row school print">
-          <h5 class="col-md-3">Lighthouse Labs</h5>
-          <div class="col-md-5">Full Stack Web Development Bootcamp</div>
-          <div class="col-md-4">August 2019 - November 2019</div>
-          <small class="col-md-12 print" class="small">Montréal, QC</small>
-        </div>
-
-        <div class="row school print">
-          <h5 class="col-md-3">McGill University</h5>
-          <div class="col-md-5">Bachelor of Science in Architecture</div>
-          <div class="col-md-4">September 2011 - June 2015</div>
-          <small class="col-md-12 print" class="small">Montréal, QC</small>
-        </div>
-      </div>
-      <div class="print">
-        <br />
-      </div>
-      <h4 class="print skills"><strong>Skills</strong></h4>
-      <div class="row edu print">
-        {{#each skills}}
-        <div class="col-print-2 col-md-2 print">
-          <small>{{ this.[0] }}</small>
-        </div>
-        {{/each}}
-      </div>
-      <!-- Certificates Screen Section -->
-      <h4 class="screen"><strong>Certificates</strong></h4>
-      <div class="screen">
-        <br />
-      </div>
-      <div class="card mb-4 screen">
-        <div class="row card-body">
-          <h6 class="col-md-3">NAD School of Digital Arts</h6>
-          <div class="col-md-5">After Effects Advanced</div>
-
-          <div class="col-md-4 text-muted">June 2023</div>
-          <div class="col-md-12">
-            <a
-              href="https://drive.google.com/file/d/1OKQmC5OEcbGJenzMzPNCg_fb0QriTDg1/view"
-              >view certificate</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-4 screen">
-        <div class="row card-body">
-          <h6 class="col-md-3">Dawson College</h6>
-          <div class="col-md-5">Intro to Wordpress</div>
-
-          <div class="col-md-4 text-muted">December 2021</div>
-          <div class="col-md-12">
-            <a
-              href="https://drive.google.com/file/d/14qlXzhqqwVhooI4eGo5P2pdJwsrKpjcC/view?usp=drive_link"
-              >view certificate</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-4 screen">
-        <div class="row card-body">
-          <h6 class="col-md-3">Google</h6>
-          <div class="col-md-5">Foundations of User Experience Design</div>
-
-          <div class="col-md-4 text-muted">June 2021</div>
-          <div class="col-md-12">
-            <a
-              href="https://www.coursera.org/account/accomplishments/verify/72CKVFBX8NUK"
-              >view certificate</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-4 screen">
-        <div class="row card-body">
-          <h6 class="col-md-3">Collège de Maisonneuve</h6>
-          <div class="col-md-5">UX Design and Design Thinking</div>
-
-          <div class="col-md-4 text-muted">February 2021</div>
-          <div class="col-md-12">
-            <a
-              href="https://drive.google.com/file/d/1ohPt8woroSxuQgHLLKlUlE-X81ZGSuvh/view"
-              >view certificate</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-4 screen">
-        <div class="row card-body">
-          <h6 class="col-md-3">Angular University (Udemy)</h6>
-          <div class="col-md-5">
-            Reactive Extensions Angular Course with RxJS
-          </div>
-
-          <div class="col-md-4 text-muted">January 2021</div>
-          <div class="col-md-12">
-            <a
-              href="https://www.udemy.com/certificate/UC-a6867eab-fa0f-4021-b15c-0d151025f602/"
-              >view certificate</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <h4 class="screen"><strong>Projects</strong></h4>
-
-      {{#each project}}
-      <div class="card mt-4 screen">
-        <div class="card-body">
-          <h5>
-            {{ header }} -
-            <small><a class="mb-2" href="{{ website }}"> see project</a></small>
-          </h5>
-
-          {{{markdown contents }}}
-
-          <div>
-            {{#each skills }}
-            <span class="badge badge-primary">- {{ this }}</span>
-            {{/each}}
-          </div>
-        </div>
-      </div>
-      {{/each}}
-      <div class="d-flex justify-content-center align-items-center screen mt-5">
-        <p class="screen">
-          <small>&copy; 2024 Berker Erol. All rights reserved.</small>
-        </p>
+      <div class="col-md-5 col-print-6 print">
+        <dl class="row header">
+          {{#each printContacts}}
+          <dt class="col-md-3 contact print">{{ @key }}</dt>
+          <dd class="col-md-9 contact">{{{ this }}}</dd>
+          {{/each}}
+        </dl>
       </div>
     </div>
-  </body>
+    <div class="d-flex space-end justify-content-center text-center links-container screen">
+      <a href="https://www.linkedin.com/in/berkererol" class="mt-2 mb-2 mr-2 ml-2 external-link screen" target="_blank">
+        <span class="fab fa-linkedin" aria-hidden="true"></span>
+        <br />
+        <span>LinkedIn</span>
+      </a>
+      <a class="mt-2 mb-2 mr-2 ml-2 external-link screen" href="https://www.github.com/berkererol" target="_blank">
+        <span class="fab fa-github-square" aria-hidden="true"></span>
+        <br />
+        <span>Github</span>
+      </a>
+      <a class="mt-2 mb-2 mr-2 ml-2 external-link screen" href="https://www.behance.net/berkererol" target="_blank">
+        <span class="fab fa-behance" aria-hidden="true"></span>
+        <br />
+        <span>Behance</span>
+      </a>
+      <a class="mt-2 mb-2 mr-2 ml-2 external-link screen" href="https://www.berkererol.com" target="_blank">
+        <span class="fa fa-briefcase" aria-hidden="true"></span>
+        <br />
+        <span>Portfolio</span>
+      </a>
+    </div>
+    <div class="summary mt-1">
+      <h4 class="summary-title"><strong>Summary</strong></h4>
+      <div class="screen">
+        <br />
+      </div>
+      <div class="mb-2">
+        <strong>
+          Skilled Front-End Developer and User Experience Designer with a
+          track record of over five years in building web
+          applications.</strong>
+      </div>
+      <ul>
+        <li>
+          Front-End developer specialized in Angular and React, coding with
+          JavaScript, TypeScript, HTML CSS and several other libraries.
+        </li>
+        <li>
+          UX designer specialized in Design Systems and design thinking
+          process.
+        </li>
+        <li>
+          Fully bilingual team player (French) who can positively build
+          rapport with other contributors to improve collaboration.
+        </li>
+        <li>
+          Curious experimenter who will go above and beyond the project scope,
+          and deliver exceptional products.
+        </li>
+      </ul>
+    </div>
+    <h4 class="screen"><strong>Skills</strong></h4>
+    <div class="screen">
+      <br />
+    </div>
+    <div class="row edu screen">
+      {{#each skills}}
+      <div class="col-auto screen">
+        <span class="badge badge-pill badge-lighter">{{ this.[0] }}</span>
+      </div>
+
+      <div class="col-print-2 col-md-2 print">
+        <small>{{ this.[0] }}</small>
+      </div>
+      {{/each}}
+    </div>
+    <br class="screen" />
+    <h4 id="prof"><strong>Professional Work Experience</strong></h4>
+    <br class="screen" />
+    {{#each plays}}
+    <div class="card mb-4 edu jobs">
+      <div class="card-body">
+        <div class="row jobtitle">
+          <h4 class="col-md-8 jobtitle">{{ title }}</h4>
+          <span class="col-md-4">{{ time }}</span>
+        </div>
+        <div class="row mb-2">
+          <h5 class="col-md-8"><a href="{{ website }}">{{ company }}</a></h5>
+          <span class="col-md-4 text-muted">{{ location }}</span>
+        </div>
+        <div class="col-12">{{{markdown contents}}}</div>
+        <ul>
+          {{#each points }}
+          <li>{{ this }}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="card-body">
+        <div>
+          <h6>TECH STACK</h6>
+          {{#each badges }}
+          <span class="badge badge-primary">&middot; {{ this }}</span>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    {{/each}}
+
+    <h4 class="screen"><strong>Education</strong></h4>
+    <div class="screen">
+      <br class="screen" />
+    </div>
+
+    <div class="card mb-4 screen">
+      <div class="row card-body">
+        <div class="col-md-3">
+          <a href="https://www.lighthouselabs.ca/en/web-development-bootcamp">Lighthouse Labs</a>
+        </div>
+        <div class="col-md-5">
+          <p>Full Stack Web Development Bootcamp</p>
+          <small>12 weeks-long, intensive coding bootcamp</small>
+        </div>
+
+        <div class="col-md-4 text-muted">August 2019 - November 2019</div>
+      </div>
+      <hr />
+      <div class="row card-body">
+        <div class="col-md-3">
+          <a href="https://www.mcgill.ca/architecture/programs">McGill University</a>
+        </div>
+        <div class="col-md-5">
+          <p>Bachelor of Science in Architecture</p>
+        </div>
+        <div class="col-md-4 text-muted">September 2011 - June 2015</div>
+      </div>
+    </div>
+    <!-- For printing only -->
+    <div class="print">
+      <h4 class="print education-title"><strong>Education</strong></h4>
+
+      <div class="row school print">
+        <h5 class="col-md-3">Lighthouse Labs</h5>
+        <div class="col-md-5">Full Stack Web Development Bootcamp</div>
+        <div class="col-md-4">August 2019 - November 2019</div>
+        <small class="col-md-12 print" class="small">Montréal, QC</small>
+      </div>
+
+      <div class="row school print">
+        <h5 class="col-md-3">McGill University</h5>
+        <div class="col-md-5">Bachelor of Science in Architecture</div>
+        <div class="col-md-4">September 2011 - June 2015</div>
+        <small class="col-md-12 print" class="small">Montréal, QC</small>
+      </div>
+    </div>
+    <div class="print">
+      <br />
+    </div>
+    <h4 class="print skills"><strong>Skills</strong></h4>
+    <div class="row edu print">
+      {{#each skills}}
+      <div class="col-print-2 col-md-2 print">
+        <small>{{ this.[0] }}</small>
+      </div>
+      {{/each}}
+    </div>
+    <!-- Certificates Screen Section -->
+    <h4 class="screen"><strong>Certificates</strong></h4>
+    <div class="screen">
+      <br />
+    </div>
+    <div class="card mb-4 screen">
+      <div class="row card-body">
+        <h6 class="col-md-3">NAD School of Digital Arts</h6>
+        <div class="col-md-5">After Effects Advanced</div>
+
+        <div class="col-md-4 text-muted">June 2023</div>
+        <div class="col-md-12">
+          <a href="https://drive.google.com/file/d/1OKQmC5OEcbGJenzMzPNCg_fb0QriTDg1/view">view certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 screen">
+      <div class="row card-body">
+        <h6 class="col-md-3">Dawson College</h6>
+        <div class="col-md-5">Intro to Wordpress</div>
+
+        <div class="col-md-4 text-muted">December 2021</div>
+        <div class="col-md-12">
+          <a href="https://drive.google.com/file/d/14qlXzhqqwVhooI4eGo5P2pdJwsrKpjcC/view?usp=drive_link">view
+            certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 screen">
+      <div class="row card-body">
+        <h6 class="col-md-3">Google</h6>
+        <div class="col-md-5">Foundations of User Experience Design</div>
+
+        <div class="col-md-4 text-muted">June 2021</div>
+        <div class="col-md-12">
+          <a href="https://www.coursera.org/account/accomplishments/verify/72CKVFBX8NUK">view certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 screen">
+      <div class="row card-body">
+        <h6 class="col-md-3">Collège de Maisonneuve</h6>
+        <div class="col-md-5">UX Design and Design Thinking</div>
+
+        <div class="col-md-4 text-muted">February 2021</div>
+        <div class="col-md-12">
+          <a href="https://drive.google.com/file/d/1ohPt8woroSxuQgHLLKlUlE-X81ZGSuvh/view">view certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 screen">
+      <div class="row card-body">
+        <h6 class="col-md-3">Angular University (Udemy)</h6>
+        <div class="col-md-5">
+          Reactive Extensions Angular Course with RxJS
+        </div>
+
+        <div class="col-md-4 text-muted">January 2021</div>
+        <div class="col-md-12">
+          <a href="https://www.udemy.com/certificate/UC-a6867eab-fa0f-4021-b15c-0d151025f602/">view certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="screen"><strong>Projects</strong></h4>
+
+    {{#each project}}
+    <div class="card mt-4 screen">
+      <div class="card-body">
+        <h5>
+          {{ header }} -
+          <small><a class="mb-2" href="{{ website }}"> see project</a></small>
+        </h5>
+
+        {{{markdown contents }}}
+
+        <div>
+          {{#each skills }}
+          <span class="badge badge-primary">- {{ this }}</span>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+    <div class="d-flex justify-content-center align-items-center screen mt-5">
+      <p class="screen">
+        <small>&copy; 2024 Berker Erol. All rights reserved.</small>
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
