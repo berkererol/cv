@@ -3,7 +3,7 @@ module.exports = {
   title1: 'Front-End Developer',
   title2: 'User Experience Designer',
   printContacts: {
-    'Address:': `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montréal, QC</span>`,
+    'Address:': `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Istanbul, TR</span>`,
     'Github:': `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
                   <a href="https://github.com/berkererol">
                   <span class="print">github.com/berkererol</span>
@@ -11,7 +11,7 @@ module.exports = {
                 </a>`,
     'Linkedin:':
       '<span class="fab fa-linkedin screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a class="screen" href="https://www.linkedin.com/in/berkererol/">Linkedin</a><a class="print" href="https://www.linkedin.com/in/berkererol/">linkedin.com/in/berkererol</a>',
-    'Phone:': `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>+1-514-582-0964`,
+    'Phone:': `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>+90-536-764-4044`,
     'Email:':
       '<span class="fas fa-paper-plane screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
     'Website:':
