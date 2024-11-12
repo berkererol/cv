@@ -3,7 +3,7 @@ module.exports = {
   title1: 'Front-End Developer',
   title2: 'User Experience Designer',
   printContacts: {
-    'Address:': `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Istanbul, TR</span>`,
+    'Address:': `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montreal, QC</span>`,
     'Github:': `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
                   <a href="https://github.com/berkererol">
                   <span class="print">github.com/berkererol</span>
@@ -11,7 +11,7 @@ module.exports = {
                 </a>`,
     'Linkedin:':
       '<span class="fab fa-linkedin screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a class="screen" href="https://www.linkedin.com/in/berkererol/">Linkedin</a><a class="print" href="https://www.linkedin.com/in/berkererol/">linkedin.com/in/berkererol</a>',
-    'Phone:': `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>+90-536-764-4044`,
+    'Phone:': `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>+1-514-582-0964`,
     'Email:':
       '<span class="fas fa-paper-plane screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
     'Website:':
@@ -64,7 +64,7 @@ module.exports = {
         'Front-End developer of the Boost ticketing project, facilitating movie ticketing, seat selection, concession purchase, and gift card redemption.',
       points: [
         'Spearheaded the development of new features and expanded business capabilities while coding in TypeScript and using React, Redux, and Jest.',
-        'Created a scalable analytics (GA4) architecture for enhanced user event tracking, enabling the company to offer a new, revenue-generating product feature which provides in-depth user engagement insights.',
+        'Added new services that handle complex API business logic in C#, using the .NET framework',
         'Integrated Sentry plug-in for real-time bug tracking, skillfully identifying and rectifying complex issues, thereby substantially improving product reliability.',
         'Collaborated with the designers to resolve UX issues in the edge case scenarios, provided corrections, and overall facilitated the design process.',
       ],
