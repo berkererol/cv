@@ -64,7 +64,7 @@ module.exports = {
         'Front-End developer of the Boost ticketing project, facilitating movie ticketing, seat selection, concession purchase, and gift card redemption.',
       points: [
         'Spearheaded the development of new features and expanded business capabilities while coding in TypeScript and using React, Redux, and Jest.',
-        'Added new services that handle complex API business logic in C#, using the .NET framework',
+        'Added new backend services that handle complex API business logic in C#, using the .NET framework.',
         'Integrated Sentry plug-in for real-time bug tracking, skillfully identifying and rectifying complex issues, thereby substantially improving product reliability.',
         'Collaborated with the designers to resolve UX issues in the edge case scenarios, provided corrections, and overall facilitated the design process.',
       ],
