@@ -23,7 +23,7 @@
 
   .summary-title {
     margin: 0;
-    padding: 0 0 1em 0;
+    padding: 0 0 1.5em 0;
   }
 
   .skills {
@@ -67,7 +67,7 @@
   #prof {
     padding: 0;
     margin: 0;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
   }
 
   .school.print:nth-of-type(n + 2) {
