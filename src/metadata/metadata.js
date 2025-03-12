@@ -60,7 +60,7 @@ module.exports = {
         'Google Analytics',
       ],
       contents:
-        'Front-End developer of the Boost ticketing project, facilitating movie ticketing, seat selection, concession purchase, and gift card redemption.',
+        'Frontend developer of the Boost ticketing project, facilitating movie ticketing, seat selection, concession purchase, and gift card redemption.',
       points: [
         'Spearheaded the development of new features and expanded business capabilities while coding in TypeScript and using React, Redux, and Jest.',
         'Added new backend services that handle complex API business logic in C#, using the .NET framework.',
@@ -86,7 +86,7 @@ module.exports = {
         'Web Components',
       ],
       contents:
-        'Owner UX designer of the Gelato design system, the main reference guide used by UX designers and front-end developers to build new product features.',
+        'Owner UX designer of the Gelato design system, the main reference guide used by UX designers and frontend developers to build new product features.',
       points: [
         'Researched, documented and designed new interface components (e.g. Date Input, Alert, Progress) and supervised UX developers to ensure 100% consistency between Figma and component package.',
         'Lead the Design Token initiative, which leverages tokens in Figma to accelerate product-specific variations in the UI.',
@@ -94,7 +94,7 @@ module.exports = {
       ],
     },
     {
-      title: 'Front-End Developer',
+      title: 'Frontend Developer',
       company: 'Behaviour Interactive',
       location: 'Montréal, Canada',
       website: 'https://www.bhvr.com',
@@ -112,15 +112,15 @@ module.exports = {
         'Steam API',
       ],
       contents:
-        'Front-End developer and UX designer assigned for Behaviour Account, a web platform where gamers manage their account.',
+        'Frontend developer and UX designer assigned for Behaviour Account, a web platform where gamers manage their account.',
       points: [
-        'Maintained front-end code of the current Behaviour Account website, where gamers can synchronize their progression in the award-winning Dead by Deadlight game on different platforms (Steam, Stadia).',
+        'Maintained frontend code of the current Behaviour Account website, where gamers can synchronize their progression in the award-winning Dead by Deadlight game on different platforms (Steam, Stadia).',
         'Led the UX design process (research, design and code implementation) of a major promotion initiative for an upcoming new game, where gamers will redeem a game reward on the web application.',
-        'Refactored the entire front-end application using React for mobile use, established a design system, and implemented internationalization that supports 12 languages.',
+        'Refactored the entire frontend application using React for mobile use, established a design system, and implemented internationalization that supports 12 languages.',
       ],
     },
     {
-      title: 'Front-End Developer',
+      title: 'Frontend Developer',
       company: 'Intact Insurance',
       location: 'Montréal, Canada',
       website: 'https://www.intact.ca',
@@ -145,7 +145,7 @@ module.exports = {
         "Angular developer for building new UI features for Intact's web application for quote generation, used by millions throughout Canada.",
       points: [
         'Developed new components using Angular and Storybook while applying reactive patterns in TypeScript (RxJS).',
-        'Built new standalone libraries within the Nx framework for migrating towards micro front-end architecture.',
+        'Built new standalone libraries within the Nx framework for migrating towards micro frontend architecture.',
         'Implemented comprehensive end-to-end tests with Cypress and increased code coverage from 85% to 100%.',
         'Independently deployed code to testing environments and prepared Git branches for releases.',
       ],
@@ -180,7 +180,7 @@ module.exports = {
         'Written bash scripts which cut down new client onboarding time from months to several weeks.',
         'Developed web accessibility-compliant (ADA) UI components in Angular, with SASS and Material UI.',
         'Implemented unit tests with Karma and Jasmine, and increased code coverage to 100%.',
-        'Integrated front-end application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.',
+        'Integrated frontend application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.',
       ],
     },
   ],
