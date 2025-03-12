@@ -1,9 +1,8 @@
 module.exports = {
   name: 'Berker Erol',
-  title1: 'Front-End Developer',
-  title2: 'User Experience Designer',
+  title1: 'Senior Frontend Developer',
   printContacts: {
-    'Address:': `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Montreal, QC</span>`,
+    'Address:': `<span class="fas fa-map-marker-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span><span>Brighton, England</span>`,
     'Github:': `<span class="fab fa-github screen" aria-hidden="true" style="padding-right: 0.5em;"></span>
                   <a href="https://github.com/berkererol">
                   <span class="print">github.com/berkererol</span>
@@ -11,7 +10,7 @@ module.exports = {
                 </a>`,
     'Linkedin:':
       '<span class="fab fa-linkedin screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a class="screen" href="https://www.linkedin.com/in/berkererol/">Linkedin</a><a class="print" href="https://www.linkedin.com/in/berkererol/">linkedin.com/in/berkererol</a>',
-    'Phone:': `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>+1-514-582-0964`,
+    'Phone:': `<span class="fas fa-mobile-alt screen" aria-hidden="true" style="padding-right: 0.7em;"></span>07570-677384`,
     'Email:':
       '<span class="fas fa-paper-plane screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
     'Website:':
@@ -43,9 +42,9 @@ module.exports = {
   ],
   plays: [
     {
-      title: 'Front-End Developer',
+      title: 'Senior Frontend Developer',
       company: 'The BoxOffice Company',
-      location: 'Montréal, Canada',
+      location: 'Glasgow, UK (Remote)',
       website: 'https://company.boxoffice.com/',
       time: 'August 2023 - present',
       badges: [
@@ -182,32 +181,6 @@ module.exports = {
         'Developed web accessibility-compliant (ADA) UI components in Angular, with SASS and Material UI.',
         'Implemented unit tests with Karma and Jasmine, and increased code coverage to 100%.',
         'Integrated front-end application to Gitlab CI/CD pipelines and performed regular deployments using Docker, Kubernetes and OpenShift.',
-      ],
-    },
-    {
-      title: 'User Experience Designer',
-      company: 'Chef Cook It',
-      location: 'Montréal, Canada',
-      website: 'https://www.chefcookit.com',
-      time: 'May 2019 - August 2019',
-      badges: [
-        'Figma',
-        'Adobe XD',
-        'Sketch',
-        'Invision',
-        'Behance',
-        'Canva',
-        'Photoshop',
-        'Adobe Premiere Pro',
-        'Abstract',
-      ],
-      contents:
-        'One of the main designers who worked on the new Cook It website, a meal kit service used by thousands of customers in Canada.',
-      points: [
-        'Created a new menu page layout after an in-depth A/B testing, which increased new subscriptions and client retention.',
-        'Designed mobile-first interface components on Figma for the front-end application in React.',
-        'Lead the manufacturing process for Kit durable, a zero-waste food kit delivered to customers by bike.',
-        'Collaborated with the marketing team to develop new branding guidelines and social media templates.',
       ],
     },
   ],
