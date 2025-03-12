@@ -112,14 +112,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     letter-spacing: -0.05em;
-    margin-bottom: 0.5rem;
-  }
-
-  #title2 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: -0.05em;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
 
   .text-muted {
@@ -210,7 +203,8 @@ p {
 .links-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* This will space out the icons evenly */
+  justify-content: space-around;
+  /* This will space out the icons evenly */
   text-align: center;
   margin-top: 1em;
 }
@@ -227,6 +221,7 @@ p {
   .links-container .external-link {
     width: 20%;
     margin: 1%;
+
     &:hover {
       border-radius: 1em;
     }
@@ -237,6 +232,7 @@ p {
   .links-container .external-link {
     width: 15%;
     margin: 1%;
+
     &:hover {
       border-radius: 1em;
     }
@@ -244,6 +240,7 @@ p {
 }
 
 @media print {
+
   h1,
   h2,
   h3,
@@ -311,17 +308,13 @@ p {
     flex: 0 0 100%;
     max-width: 100%;
   }
+
   #name {
-letter-spacing: -1px;
-font-size: 48px;
+    letter-spacing: -1px;
+    font-size: 48px;
   }
 
   #title1 {
-    font-weight: 300;
-    font-size: 24px;
-  }
-
-  #title2 {
     font-weight: 300;
     font-size: 24px;
   }
