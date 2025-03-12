@@ -60,7 +60,7 @@ module.exports = {
         'Google Analytics',
       ],
       contents:
-        'Frontend developer of the Boost ticketing project, facilitating movie ticketing, seat selection, concession purchase, and gift card redemption.',
+        'Lead frontend developer of the Boost ticketing project, the application behind millions of movie tickets sold each year.',
       points: [
         'Spearheaded the development of new features and expanded business capabilities while coding in TypeScript and using React, Redux, and Jest.',
         'Added new backend services that handle complex API business logic in C#, using the .NET framework.',
