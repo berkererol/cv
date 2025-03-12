@@ -67,7 +67,7 @@
   #prof {
     padding: 0;
     margin: 0;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
   }
 
   .school.print:nth-of-type(n + 2) {
