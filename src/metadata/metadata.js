@@ -14,7 +14,7 @@ module.exports = {
     'Email:':
       '<span class="fas fa-paper-plane screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="mailto:berkererol@gmail.com">berkererol@gmail.com</a>',
     'Website:':
-      '<span class="fas fa-link screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="https://https://berkererol.myportfolio.com//">Portfolio</a>',
+      '<span class="fas fa-link screen" aria-hidden="true" style="padding-right: 0.7em;"></span><a href="https://berkererol.com/">Portfolio</a>',
   },
   skills: [
     ['TypeScript'],
