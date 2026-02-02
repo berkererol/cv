@@ -40,7 +40,7 @@ module.exports = {
     ['UI Development'],
     ['French'],
     ['Prototyping'],
-    ['.NET Core],
+    ['.NET Core'],
     ['Azure Services'],
     ['SQL'],
   ],
