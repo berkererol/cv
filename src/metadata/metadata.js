@@ -18,10 +18,10 @@ module.exports = {
   },
   skills: [
     ['TypeScript'],
-    ['JavaScript ES6'],
+    ['JavaScript'],
     ['Adobe Suite'],
     ['Figma'],
-    ['Angular v18'],
+    ['Angular v21'],
     ['Node JS'],
     ['React v19'],
     ['Redux'],
@@ -30,7 +30,7 @@ module.exports = {
     ['Wireframing'],
     ['RxJS'],
     ['HTML'],
-    ['Prototyping'],
+    ['C#'],
     ['SASS'],
     ['Design systems'],
     ['CSS'],
@@ -39,6 +39,10 @@ module.exports = {
     ['Storybook'],
     ['UI Development'],
     ['French'],
+    ['Prototyping'],
+    ['.NET Core],
+    ['Azure Services'],
+    ['SQL'],
   ],
   plays: [
     {
